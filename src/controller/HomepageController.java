@@ -646,4 +646,13 @@ public class HomepageController {
                 e.printStackTrace();
         }
     }
+
+        public void switchToPayment(MouseEvent event) throws IOException {
+        MoviePaymentController.movieChoosen = movieNames[movieIndex];
+        Parent root = FXMLLoader.load(getClass().getResource("/view/moviePayment.fxml"));
+        Stage stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
+        Scene scene = new Scene(root);
+        stage.setScene(scene);
+        stage.show();
+    }
 }

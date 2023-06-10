@@ -71,12 +71,12 @@
                   <Image url="@../vectorImages/Next%20arrow%20white%20png.png" />
                </image>
             </ImageView>
-            <ImageView fx:id="rentButtonFinal" fitHeight="25.0" fitWidth="130.0" layoutX="916.0" layoutY="402.0" onMouseClicked="#rentButtonClicked" pickOnBounds="true" preserveRatio="true">
+            <ImageView fx:id="rentButtonFinal" fitHeight="25.0" fitWidth="130.0" layoutX="916.0" layoutY="402.0" onMouseClicked="#switchToPayment" pickOnBounds="true" preserveRatio="true">
                <image>
                   <Image url="@../vectorImages/Rectangular%20circle%20button.png" />
                </image>
             </ImageView>
-            <Text fill="WHITE" layoutX="941.0" layoutY="420.0" onMouseClicked="#rentButtonClicked" strokeType="OUTSIDE" strokeWidth="0.0" text="Rent">
+            <Text fill="WHITE" layoutX="941.0" layoutY="420.0" onMouseClicked="#switchToPayment" strokeType="OUTSIDE" strokeWidth="0.0" text="Rent">
                <font>
                   <Font name="Franklin Gothic Medium Cond" size="18.0" />
                </font></Text>
