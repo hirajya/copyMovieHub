@@ -1,5 +1,7 @@
 package model;
 
+import java.io.File;
+
 import javafx.scene.image.ImageView;
 
 public class M_3 implements movie{
@@ -10,7 +12,7 @@ public class M_3 implements movie{
     private String rateVotes = "319,000";
     private String imageMScreen = "/movieImages/m_3MainScreen.jpg";
     private String imagePoster = "/movieImages/m_3Poster.jpg";
-    private String trailer = "C:\\Users\\angel\\Desktop\\copyMovieHub\\copyMovieHub\\src\\movieTrailer\\M3Trailer.mp4";
+    private String trailer = "\\src\\movieTrailer\\M3Trailer.mp4";
     private String creatorDescription = "A Ghibli Original film by Hayao Miyazaki";
     private String genre1 = "Animation";
     private String genre2 = "Adventure";
@@ -40,7 +42,10 @@ public class M_3 implements movie{
     }
 
     public String getTrailer() {
-        return trailer;
+        File directory = new File("");
+        String loc = (directory.getAbsolutePath() + trailer);
+
+        return loc;
     }
 
     public String getCreatorDescription() {

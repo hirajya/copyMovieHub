@@ -1,5 +1,7 @@
 package model;
 
+import java.io.File;
+
 import javafx.scene.image.ImageView;
 
 public class M_6 implements movie{
@@ -10,7 +12,7 @@ public class M_6 implements movie{
     private String rateVotes = "250,000";
     private String imageMScreen = "/movieImages/m_6MainScreen.jpg";
     private String imagePoster = "/movieImages/m_6Poster.png";
-    private String trailer = "C:\\Users\\angel\\Desktop\\copyMovieHub\\copyMovieHub\\src\\movieTrailer\\M6Trailer.mp4";
+    private String trailer = "\\src\\movieTrailer\\M6Trailer.mp4";
     private String creatorDescription = "An Original Film of Apple Studios";
     private String genre1 = "Historical Drama";
     private String genre2 = "Action";
@@ -40,7 +42,10 @@ public class M_6 implements movie{
     }
 
     public String getTrailer() {
-        return trailer;
+        File directory = new File("");
+        String loc = (directory.getAbsolutePath() + trailer);
+
+        return loc;
     }
 
     public String getCreatorDescription() {

@@ -1,5 +1,7 @@
 package model;
 
+import java.io.File;
+
 import javafx.scene.image.ImageView;
 
 public class M_5 implements movie{
@@ -10,7 +12,7 @@ public class M_5 implements movie{
     private String rateVotes = "350,500";
     private String imageMScreen = "/movieImages/m_5MainScreen.jpg";
     private String imagePoster = "/movieImages/m_5Poster.png";
-    private String trailer = "C:\\Users\\angel\\Desktop\\copyMovieHub\\copyMovieHub\\src\\movieTrailer\\M5Trailer.mp4";
+    private String trailer = "\\src\\movieTrailer\\M5Trailer.mp4";
     private String creatorDescription = "An Original Film of Marvel Studios";
     private String genre1 = "Superhero";
     private String genre2 = "Action";
@@ -40,7 +42,10 @@ public class M_5 implements movie{
     }
 
     public String getTrailer() {
-        return trailer;
+        File directory = new File("");
+        String loc = (directory.getAbsolutePath() + trailer);
+
+        return loc;
     }
 
     public String getCreatorDescription() {
