@@ -10,7 +10,7 @@ public class M_6 implements movie{
     private String rateVotes = "250,000";
     private String imageMScreen = "/movieImages/m_6MainScreen.jpg";
     private String imagePoster = "/movieImages/m_6Poster.png";
-    private String trailer = "/movieTrailers/m_6Trailer.mp4";
+    private String trailer = "C:\\Users\\angel\\Desktop\\copyMovieHub\\copyMovieHub\\src\\movieTrailer\\M6Trailer.mp4";
     private String creatorDescription = "An Original Film of Apple Studios";
     private String genre1 = "Historical Drama";
     private String genre2 = "Action";

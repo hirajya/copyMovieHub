@@ -10,7 +10,7 @@ public class M_7 implements movie{
     private String rateVotes = "370,000";
     private String imageMScreen = "/movieImages/m_7MainScreen.jpg";
     private String imagePoster = "/movieImages/m_7Poster.jpg";
-    private String trailer = "/movieTrailers/m_7Trailer.mp4";
+    private String trailer = "C:\\Users\\angel\\Desktop\\copyMovieHub\\copyMovieHub\\src\\movieTrailer\\M7Trailer.mp4";
     private String creatorDescription = "An Original Film of Lionsgate";
     private String genre1 = "Thriller";
     private String genre2 = "Action";

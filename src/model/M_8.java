@@ -10,7 +10,7 @@ public class M_8 implements movie{
     private String rateVotes = "300,000";
     private String imageMScreen = "/movieImages/m_8MainScreen.jpg";
     private String imagePoster = "/movieImages/m_8Poster.jpg";
-    private String trailer = "/movieTrailers/m_8Trailer.mp4";
+    private String trailer = "C:\\Users\\angel\\Desktop\\copyMovieHub\\copyMovieHub\\src\\movieTrailer\\M8Trailer.mp4";
     private String creatorDescription = "An Original Film of 20th Century Studios";
     private String genre1 = "Adventure";
     private String genre2 = "Science Fiction";

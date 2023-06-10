@@ -10,7 +10,7 @@ public class M_10 implements movie{
     private String rateVotes = "684,400";
     private String imageMScreen = "/movieImages/m_10MainScreen.jpg";
     private String imagePoster = "/movieImages/m_10Poster.jpg";
-    private String trailer = "/movieTrailers/m_10Trailer.mp4";
+    private String trailer = "C:\\Users\\angel\\Desktop\\copyMovieHub\\copyMovieHub\\src\\movieTrailer\\M10Trailer.mp4";
     private String creatorDescription = "A Ghibli Original film by Hayao Miyazaki";
     private String genre1 = "Animation";
     private String genre2 = "Fantasy";

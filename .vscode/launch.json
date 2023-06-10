@@ -16,7 +16,7 @@
       "request": "launch",
       "mainClass": "App",
       "projectName": "copyMovieHub_7ec1d82f",
-      "vmArgs": "--module-path C:/openjfx-20.0.1_windows-x64_bin-sdk/javafx-sdk-20.0.1/lib --add-modules javafx.controls,javafx.fxml"
+      "vmArgs": "--module-path C:/openjfx-20.0.1_windows-x64_bin-sdk/javafx-sdk-20.0.1/lib --add-modules javafx.controls,javafx.media --add-modules=javafx.controls,javafx.fxml"
     }
   ]
 }

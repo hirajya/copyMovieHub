@@ -10,7 +10,7 @@ public class M_5 implements movie{
     private String rateVotes = "350,500";
     private String imageMScreen = "/movieImages/m_5MainScreen.jpg";
     private String imagePoster = "/movieImages/m_5Poster.png";
-    private String trailer = "/movieTrailers/m_5Trailer.mp4";
+    private String trailer = "C:\\Users\\angel\\Desktop\\copyMovieHub\\copyMovieHub\\src\\movieTrailer\\M5Trailer.mp4";
     private String creatorDescription = "An Original Film of Marvel Studios";
     private String genre1 = "Superhero";
     private String genre2 = "Action";

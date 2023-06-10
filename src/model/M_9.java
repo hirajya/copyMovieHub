@@ -10,7 +10,7 @@ public class M_9 implements movie{
     private String rateVotes = "1,700";
     private String imageMScreen = "/movieImages/m_9MainScreen.jpg";
     private String imagePoster = "/movieImages/m_9Poster.jpg";
-    private String trailer = "/movieTrailers/m_9Trailer.mp4";
+    private String trailer = "C:\\Users\\angel\\Desktop\\copyMovieHub\\copyMovieHub\\src\\movieTrailer\\M9Trailer.mp4";
     private String creatorDescription = "An Original Film of ABS-CBN Film Productions";
     private String genre1 = "Romance";
     private String genre2 = "Comedy";

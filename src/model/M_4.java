@@ -10,7 +10,7 @@ public class M_4 implements movie{
     private String rateVotes = "3,500";
     private String imageMScreen = "/movieImages/m_4MainScreen.jpg";
     private String imagePoster = "/movieImages/m_4Poster.jpg";
-    private String trailer = "/movieTrailers/m_4Trailer.mp4";
+    private String trailer = "C:\\Users\\angel\\Desktop\\copyMovieHub\\copyMovieHub\\src\\movieTrailer\\M4Trailer.mp4";
     private String creatorDescription = "An Original Film of Star Cinema";
     private String genre1 = "Romance";
     private String genre2 = "Drama";

@@ -10,7 +10,7 @@ public class M_2 implements movie{
     private String rateVotes = "100,000";
     private String imageMScreen = "/movieImages/m_2MainScreen.jpg";
     private String imagePoster = "/movieImages/m_2Poster.jpg";
-    private String trailer = "/movieTrailers/m_2Trailer.mp4";
+    private String trailer = "C:\\Users\\angel\\Desktop\\copyMovieHub\\copyMovieHub\\src\\movieTrailer\\M2Trailer.mp4";
     private String creatorDescription = "An Original Film of MGM Studios";
     private String genre1 = "Drama";
     private String genre2 = "Sports";

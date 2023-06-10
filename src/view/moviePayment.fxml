@@ -1,11 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.media.MediaView?>
 <?import javafx.scene.text.Text?>
-
 
 <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="724.0" prefWidth="1140.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.MoviePaymentController">
    <children>
-      <Text fx:id="movieee" layoutX="371.0" layoutY="191.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" />
+      <Text fx:id="movieee" layoutX="914.0" layoutY="217.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" />
+      <MediaView fx:id="mediaView" fitHeight="500.0" fitWidth="750.0" layoutX="37.0" layoutY="97.0" />
    </children>
 </AnchorPane>
