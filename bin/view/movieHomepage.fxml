@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="724.0" prefWidth="1140.0" style="-fx-background-color: #000000;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.HomepageController">
+   <children>
+      <AnchorPane layoutX="-29.0" layoutY="16.0" prefHeight="692.0" prefWidth="1206.0">
+         <children>
+            <ImageView fx:id="bigscreen" cache="true" fitHeight="692.0" fitWidth="1292.0" layoutX="3.0" pickOnBounds="true" preserveRatio="true" />
+            <ImageView fx:id="blackscreenDescrip" fitHeight="713.0" fitWidth="948.0" layoutX="101.0" layoutY="-382.0" opacity="0.75" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../vectorImages/A_black_image.jpg" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="905.0" fitWidth="1343.0" layoutX="30.0" layoutY="435.0" opacity="0.4" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../vectorImages/A_black_image.jpg" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="spotscreen" fitHeight="334.0" fitWidth="223.0" layoutX="127.0" layoutY="329.0" pickOnBounds="true" preserveRatio="true" />
+            <ImageView fx:id="sidescreen2" fitHeight="166.0" fitWidth="124.0" layoutX="595.0" layoutY="450.0" pickOnBounds="true" preserveRatio="true" />
+            <ImageView fx:id="sidescreen3" fitHeight="166.0" fitWidth="133.0" layoutX="748.0" layoutY="450.0" pickOnBounds="true" preserveRatio="true" />
+            <ImageView fx:id="sidescreen1" fitHeight="166.0" fitWidth="157.0" layoutX="439.0" layoutY="450.0" pickOnBounds="true" preserveRatio="true" />
+            <ImageView fx:id="sidescreen4" fitHeight="173.0" fitWidth="115.0" layoutX="902.0" layoutY="448.0" pickOnBounds="true" preserveRatio="true" />
+            <Text fx:id="movieNameText" fill="WHITE" layoutX="118.0" layoutY="131.0" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="343.0">
+               <font>
+                  <Font name="Franklin Gothic Demi Cond" size="64.0" />
+               </font>
+            </Text>
+            <Text fx:id="createdByText" fill="#e4a1a1" layoutX="118.0" layoutY="318.0" opacity="0.65" strokeType="OUTSIDE" strokeWidth="0.0">
+               <font>
+                  <Font name="Franklin Gothic Medium Cond" size="12.0" />
+               </font></Text>
+            <Text fx:id="yearText" fill="WHITE" layoutX="328.0" layoutY="318.0" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="200.0">
+               <font>
+                  <Font name="Franklin Gothic Medium Cond" size="13.0" />
+               </font>
+            </Text>
+            <Text fx:id="descriptionText" fill="WHITE" layoutX="533.0" layoutY="90.0" strokeType="OUTSIDE" strokeWidth="0.0" textAlignment="JUSTIFY" wrappingWidth="485.0">
+               <font>
+                  <Font name="Franklin Gothic Medium Cond" size="14.0" />
+               </font>
+            </Text>
+            <ImageView fx:id="profileIcon" fitHeight="25.0" fitWidth="34.0" layoutX="1042.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../vectorImages/user%20icon.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="25.0" fitWidth="29.0" layoutX="990.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../vectorImages/Search%20icon.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="25.0" fitWidth="29.0" layoutX="1010.0" layoutY="402.0" onMouseClicked="#infoButtonClicked" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../vectorImages/info%20icon.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="toRight" fitHeight="25.0" fitWidth="38.0" layoutX="1037.0" layoutY="518.0" onMouseClicked="#rightButtonClicked" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../vectorImages/Next%20arrow%20white%20png.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="toLeft" fitHeight="25.0" fitWidth="38.0" layoutX="74.0" layoutY="521.0" onMouseClicked="#leftButtonClicked" pickOnBounds="true" preserveRatio="true" rotate="180.0">
+               <image>
+                  <Image url="@../vectorImages/Next%20arrow%20white%20png.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="rentButtonFinal" fitHeight="25.0" fitWidth="130.0" layoutX="916.0" layoutY="402.0" onMouseClicked="#rentButtonClicked" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../vectorImages/Rectangular%20circle%20button.png" />
+               </image>
+            </ImageView>
+            <Text fill="WHITE" layoutX="941.0" layoutY="420.0" onMouseClicked="#rentButtonClicked" strokeType="OUTSIDE" strokeWidth="0.0" text="Rent">
+               <font>
+                  <Font name="Franklin Gothic Medium Cond" size="18.0" />
+               </font></Text>
+            <ImageView fx:id="optionButton" fitHeight="25.0" fitWidth="29.0" layoutX="72.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../vectorImages/Option%20icon.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="blackScreenEnabler2" fitHeight="282.0" fitWidth="334.0" layoutX="111.0" layoutY="45.0" onMouseEntered="#blackAppearDescrip" onMouseExited="#blackDontAppearDescrip" pickOnBounds="true" preserveRatio="true" />
+            <ImageView fitHeight="106.0" fitWidth="523.0" layoutX="533.0" layoutY="77.0" onMouseEntered="#blackAppearDescrip" onMouseExited="#blackDontAppearDescrip" pickOnBounds="true" preserveRatio="true" />
+            <ImageView fitHeight="156.0" fitWidth="9.0" layoutX="1147.0" layoutY="198.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../vectorImages/Scroll%20bg.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="scrollButton" fitHeight="74.0" fitWidth="9.0" layoutX="1147.0" layoutY="199.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../vectorImages/Main%20scroll.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="73.0" fitWidth="62.0" layoutX="1110.0" layoutY="-17.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../vectorImages/movieHubLogo.png" />
+               </image>
+            </ImageView>
+         </children>
+      </AnchorPane>
+      <Pane fx:id="optionPane" layoutX="-254.0" prefHeight="724.0" prefWidth="261.0" style="-fx-background-color: #111111;">
+         <children>
+            <ImageView fitHeight="25.0" fitWidth="29.0" layoutX="44.0" layoutY="30.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../vectorImages/Option%20icon.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="106.0" fitWidth="93.0" layoutX="162.0" layoutY="8.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../vectorImages/colorblack2Logo.png" />
+               </image>
+            </ImageView>
+            <Text fill="WHITE" layoutX="44.0" layoutY="234.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Trending">
+               <font>
+                  <Font name="Franklin Gothic Medium Cond" size="29.0" />
+               </font>
+            </Text>
+            <Text fill="WHITE" layoutX="44.0" layoutY="281.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Categories">
+               <font>
+                  <Font name="Franklin Gothic Medium Cond" size="29.0" />
+               </font>
+            </Text>
+            <Text fill="WHITE" layoutX="44.0" layoutY="190.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Profile">
+               <font>
+                  <Font name="Franklin Gothic Medium Cond" size="29.0" />
+               </font>
+            </Text>
+            <Text fill="WHITE" layoutX="44.0" layoutY="143.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Home">
+               <font>
+                  <Font name="Franklin Gothic Medium Cond" size="29.0" />
+               </font>
+            </Text>
+            <Text fill="WHITE" layoutX="46.0" layoutY="378.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Settings">
+               <font>
+                  <Font name="Franklin Gothic Medium Cond" size="29.0" />
+               </font>
+            </Text>
+            <Text fill="WHITE" layoutX="46.0" layoutY="328.0" strokeType="OUTSIDE" strokeWidth="0.0" text="My Purchases">
+               <font>
+                  <Font name="Franklin Gothic Medium Cond" size="29.0" />
+               </font>
+            </Text>
+            <Text fill="WHITE" layoutX="40.0" layoutY="428.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Help / Support">
+               <font>
+                  <Font name="Franklin Gothic Medium Cond" size="29.0" />
+               </font>
+            </Text>
+            <Text fill="WHITE" layoutX="40.0" layoutY="555.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Php ">
+               <font>
+                  <Font name="Franklin Gothic Medium" size="27.0" />
+               </font>
+            </Text>
+            <Text fx:id="moneyAmt" fill="WHITE" layoutX="107.0" layoutY="555.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Text">
+               <font>
+                  <Font name="Franklin Gothic Medium" size="27.0" />
+               </font>
+            </Text>
+            <Text fill="WHITE" layoutX="37.0" layoutY="519.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Your balance:">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Text>
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>
