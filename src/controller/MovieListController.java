@@ -119,7 +119,7 @@ public class MovieListController {
 
         scrollButton2.setOnMouseClicked(event -> moveScrollUp());
         optionButton.setOnMouseClicked(event -> movePaneRight());
-        optionPane.getChildren().get(0).setOnMouseClicked(event -> movePaneLeft());
+        optionPane.setOnMouseClicked(event -> movePaneLeft());
 
         DropShadow dropShadow = new DropShadow();
         moviePic1.setEffect(new DropShadow(20, Color.BLACK));
@@ -395,13 +395,13 @@ public class MovieListController {
     }
 
     private void movePaneRight() {
-        movePaneRight(optionPane, 0.5, 250);
+        movePaneRight(optionPane, 0.5, 115);
         System.out.println("move pane successfully");
 
     }
 
     private void movePaneLeft() {
-        movePaneRight(optionPane, 0.5, -250);
+        movePaneRight(optionPane, 0.5, -115);
         System.out.println("move pane successfully");
     }
 

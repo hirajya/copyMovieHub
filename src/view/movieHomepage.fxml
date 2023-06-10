@@ -104,68 +104,48 @@
             </ImageView>
          </children>
       </AnchorPane>
-      <Pane fx:id="optionPane" layoutX="-254.0" prefHeight="724.0" prefWidth="261.0" style="-fx-background-color: #111111;">
+      <Pane fx:id="optionPane" layoutX="-115.0" prefHeight="724.0" prefWidth="115.0" style="-fx-background-color: #111111;">
          <children>
-            <ImageView fitHeight="25.0" fitWidth="29.0" layoutX="44.0" layoutY="30.0" pickOnBounds="true" preserveRatio="true">
+            <Text fill="WHITE" layoutX="32.0" layoutY="180.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Wallet">
+               <font>
+                  <Font name="Franklin Gothic Medium Cond" size="22.0" />
+               </font>
+            </Text>
+            <Text fill="WHITE" layoutX="31.0" layoutY="133.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Profile">
+               <font>
+                  <Font name="Franklin Gothic Medium Cond" size="22.0" />
+               </font>
+            </Text>
+            <Text fill="WHITE" layoutX="14.0" layoutY="477.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Php ">
+               <font>
+                  <Font name="Franklin Gothic Medium" size="19.0" />
+               </font>
+            </Text>
+            <Text fx:id="moneyAmt" fill="WHITE" layoutX="54.0" layoutY="476.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Text">
+               <font>
+                  <Font name="Franklin Gothic Medium" size="19.0" />
+               </font>
+            </Text>
+            <Text fill="WHITE" layoutX="15.0" layoutY="446.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Your balance:">
+               <font>
+                  <Font size="10.0" />
+               </font>
+            </Text>
+            <ImageView fitHeight="25.0" fitWidth="26.0" layoutX="45.0" layoutY="20.0" pickOnBounds="true" preserveRatio="true">
                <image>
-                  <Image url="@../vectorImages/Option%20icon.png" />
+                  <Image url="@../vectorImages/Home%20icon.png" />
                </image>
             </ImageView>
-            <ImageView fitHeight="106.0" fitWidth="93.0" layoutX="162.0" layoutY="8.0" pickOnBounds="true" preserveRatio="true">
+            <ImageView fitHeight="47.0" fitWidth="31.0" layoutX="42.0" layoutY="564.0" pickOnBounds="true" preserveRatio="true">
                <image>
-                  <Image url="@../vectorImages/colorblack2Logo.png" />
+                  <Image url="@../vectorImages/Settings%20icon.png" />
                </image>
             </ImageView>
-            <Text fill="WHITE" layoutX="44.0" layoutY="234.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Trending">
-               <font>
-                  <Font name="Franklin Gothic Medium Cond" size="29.0" />
-               </font>
-            </Text>
-            <Text fill="WHITE" layoutX="44.0" layoutY="281.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Categories">
-               <font>
-                  <Font name="Franklin Gothic Medium Cond" size="29.0" />
-               </font>
-            </Text>
-            <Text fill="WHITE" layoutX="44.0" layoutY="190.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Profile">
-               <font>
-                  <Font name="Franklin Gothic Medium Cond" size="29.0" />
-               </font>
-            </Text>
-            <Text fill="WHITE" layoutX="44.0" layoutY="143.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Home">
-               <font>
-                  <Font name="Franklin Gothic Medium Cond" size="29.0" />
-               </font>
-            </Text>
-            <Text fill="WHITE" layoutX="46.0" layoutY="378.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Settings">
-               <font>
-                  <Font name="Franklin Gothic Medium Cond" size="29.0" />
-               </font>
-            </Text>
-            <Text fill="WHITE" layoutX="46.0" layoutY="328.0" strokeType="OUTSIDE" strokeWidth="0.0" text="My Purchases">
-               <font>
-                  <Font name="Franklin Gothic Medium Cond" size="29.0" />
-               </font>
-            </Text>
-            <Text fill="WHITE" layoutX="40.0" layoutY="428.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Help / Support">
-               <font>
-                  <Font name="Franklin Gothic Medium Cond" size="29.0" />
-               </font>
-            </Text>
-            <Text fill="WHITE" layoutX="40.0" layoutY="555.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Php ">
-               <font>
-                  <Font name="Franklin Gothic Medium" size="27.0" />
-               </font>
-            </Text>
-            <Text fx:id="moneyAmt" fill="WHITE" layoutX="107.0" layoutY="555.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Text">
-               <font>
-                  <Font name="Franklin Gothic Medium" size="27.0" />
-               </font>
-            </Text>
-            <Text fill="WHITE" layoutX="37.0" layoutY="519.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Your balance:">
-               <font>
-                  <Font size="18.0" />
-               </font>
-            </Text>
+            <ImageView fitHeight="85.0" fitWidth="72.0" layoutX="21.0" layoutY="617.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../vectorImages/PFP%20frnaco%20icon.png" />
+               </image>
+            </ImageView>
          </children>
       </Pane>
    </children>

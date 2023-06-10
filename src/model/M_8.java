@@ -42,7 +42,7 @@ public class M_8 implements movie{
     }
 
     public String getTrailer() {
-        File directory = new File("");
+        File directory = new File(""); 
         String loc = (directory.getAbsolutePath() + trailer);
 
         return loc;
