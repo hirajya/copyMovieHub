@@ -63,6 +63,7 @@ public class HomepageController {
     @FXML 
     Pane movie1InfoPane, movie2InfoPane, movie3InfoPane, movie4InfoPane, movie5InfoPane, movie6InfoPane, movie7InfoPane, movie8InfoPane, movie9InfoPane, movie10InfoPane;
 
+    
     public void initialize() {
         M_1 m1 = new M_1();
         M_2 m2 = new M_2();
@@ -105,9 +106,9 @@ public class HomepageController {
     }
 
     static String[] movieNames = {"M_1", "M_2", "M_3", "M_4", "M_5", "M_6", "M_7", "M_8", "M_9", "M_10"}; // movieNames[0] = "M_1" + .getDescription // "M_1" M_1
-    static int movieIndex = 0;          // M_1 "M_1"
+    static int movieIndex = 0;          // "M_2"
     static int movieIndexSide1 = 1; // movieNames[movieIndex] = "M_1" "M_1".getDescription
-    static int movieIndexSide2 = 2;
+    static int movieIndexSide2 = 2; // 
     static int movieIndexSide3 = 3;
     static int movieIndexSide4 = 4;
 
@@ -348,15 +349,15 @@ public class HomepageController {
         }
     }
 
-    public void updateMovieDescription() {
+    public void updateMovieDescription() { // "M_2".getName() ; "M_2" -> M_2
         try {
-            String className = "model." + movieNames[movieIndex];
-            Class<?> clazz = Class.forName(className);
+            String className = "model." + movieNames[movieIndex]; // "model.M_2"
+            Class<?> clazz = Class.forName(className); // model.M_2
             Object instance = clazz.getDeclaredConstructor().newInstance();
 
             if (instance instanceof movie) {
                 movie movieInstance = (movie) instance;
-                String movieDescription = movieInstance.getDescription();
+                String movieDescription = movieInstance.getDescription(); // M_2.getDescription()
                 fadeText(descriptionText, movieDescription);
             }
             } catch (Exception e) {
@@ -648,7 +649,7 @@ public class HomepageController {
     }
 
         public void switchToPayment(MouseEvent event) throws IOException {
-        MoviePaymentController.movieChoosen = movieNames[movieIndex];
+        MoviePaymentController.setMovieChoosen(movieNames[movieIndex]);
         Parent root = FXMLLoader.load(getClass().getResource("/view/moviePayment.fxml"));
         Stage stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
         Scene scene = new Scene(root);

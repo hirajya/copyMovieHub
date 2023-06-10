@@ -20,4 +20,6 @@ public interface movie {
     String getActor2();
     String getActor3();
 
-}
+} // abstract vs. interface
+// abstract - method ,variable
+// interface - method only

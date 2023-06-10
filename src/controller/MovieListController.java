@@ -510,13 +510,13 @@ public class MovieListController {
     }
 
     private void fadeText(Text textNode, String newText) {
-        FadeTransition fadeOutTransition = new FadeTransition(Duration.millis(1000), textNode);
+        FadeTransition fadeOutTransition = new FadeTransition(Duration.millis(1500), textNode);
         fadeOutTransition.setFromValue(1.0);
         fadeOutTransition.setToValue(0.0);
         
         fadeOutTransition.setOnFinished(event -> {
             textNode.setText(newText);
-            FadeTransition fadeInTransition = new FadeTransition(Duration.millis(1000), textNode);
+            FadeTransition fadeInTransition = new FadeTransition(Duration.millis(1500), textNode);
             fadeInTransition.setFromValue(0.0);
             fadeInTransition.setToValue(1.0);
             fadeInTransition.play();
@@ -526,14 +526,14 @@ public class MovieListController {
     }
 
     private void fadeImageView(ImageView imageView, ImageView newImage) {
-        FadeTransition fadeOutTransition = new FadeTransition(Duration.millis(1000), imageView);
+        FadeTransition fadeOutTransition = new FadeTransition(Duration.millis(1500), imageView);
         fadeOutTransition.setFromValue(1.0);
         fadeOutTransition.setToValue(0.0);
         
         fadeOutTransition.setOnFinished(event -> {
             imageView.setEffect(new DropShadow(20, Color.BLACK));
             imageView.setImage(newImage.getImage());
-            FadeTransition fadeInTransition = new FadeTransition(Duration.millis(1000), imageView);
+            FadeTransition fadeInTransition = new FadeTransition(Duration.millis(1500), imageView);
             fadeInTransition.setFromValue(0.0);
             fadeInTransition.setToValue(1.0);
             fadeInTransition.play();
