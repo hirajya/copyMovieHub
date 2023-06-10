@@ -104,6 +104,18 @@ public class MovieListController {
         firstYear("M_9", yearMovie9);
         firstYear("M_10", yearMovie10);
 
+        ((ImageView) movie1InfoPane.getChildren().get(0)).setImage(m1.getPosterImage().getImage());
+        ((ImageView) movie2InfoPane.getChildren().get(0)).setImage(m2.getPosterImage().getImage());
+        ((ImageView) movie3InfoPane.getChildren().get(0)).setImage(m3.getPosterImage().getImage());
+        ((ImageView) movie4InfoPane.getChildren().get(0)).setImage(m4.getPosterImage().getImage());
+        ((ImageView) movie5InfoPane.getChildren().get(0)).setImage(m5.getPosterImage().getImage());
+        ((ImageView) movie6InfoPane.getChildren().get(0)).setImage(m6.getPosterImage().getImage());
+        ((ImageView) movie7InfoPane.getChildren().get(0)).setImage(m7.getPosterImage().getImage());
+        ((ImageView) movie8InfoPane.getChildren().get(0)).setImage(m8.getPosterImage().getImage());
+        ((ImageView) movie9InfoPane.getChildren().get(0)).setImage(m9.getPosterImage().getImage());
+        ((ImageView) movie10InfoPane.getChildren().get(0)).setImage(m10.getPosterImage().getImage());
+
+
 
         scrollButton2.setOnMouseClicked(event -> moveScrollUp());
         optionButton.setOnMouseClicked(event -> movePaneRight());

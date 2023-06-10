@@ -99,6 +99,7 @@
       </Text>
       <Pane fx:id="movie1InfoPane" layoutX="33.0" layoutY="111.0" onMouseClicked="#switchToInfo" onMouseExited="#hideInfoMovie1" prefHeight="278.0" prefWidth="398.0" style="-fx-background-color: #333333;" visible="false">
          <children>
+            <ImageView fx:id="paneMovie1" fitHeight="211.0" fitWidth="168.0" layoutX="14.0" layoutY="26.0" pickOnBounds="true" preserveRatio="true" />
             <ImageView fitHeight="25.0" fitWidth="43.0" layoutX="177.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
                <image>
                   <Image url="@../vectorImages/IMDb%20png.png" />
@@ -127,11 +128,6 @@
                </font>
             </Text>
             <Text fill="#ffffff80" layoutX="175.0" layoutY="98.0" strokeType="OUTSIDE" strokeWidth="0.0" text="2004" />
-            <ImageView fx:id="moviePaneImage1" fitHeight="211.0" fitWidth="168.0" layoutX="14.0" layoutY="26.0" pickOnBounds="true" preserveRatio="true">
-               <image>
-                  <Image url="@../movieImages/m_1Poster.jpg" />
-               </image>
-            </ImageView>
          </children>
       </Pane>
       <Text fx:id="movieTitle3" fill="WHITE" layoutX="491.0" layoutY="359.0" strokeType="OUTSIDE" strokeWidth="0.0">
@@ -143,6 +139,7 @@
       <Text fx:id="yearMovie3" fill="#ffffff80" layoutX="534.0" layoutY="376.0" strokeType="OUTSIDE" strokeWidth="0.0" />
       <Pane fx:id="movie3InfoPane" layoutX="471.0" layoutY="117.0" onMouseClicked="#switchToInfo" onMouseExited="#hideInfoMovie3" prefHeight="267.0" prefWidth="398.0" style="-fx-background-color: #333333;" visible="false">
          <children>
+            <ImageView fx:id="paneMovie3" fitHeight="211.0" fitWidth="168.0" layoutX="21.0" layoutY="28.0" pickOnBounds="true" preserveRatio="true" />
             <ImageView fitHeight="25.0" fitWidth="43.0" layoutX="184.0" layoutY="16.0" pickOnBounds="true" preserveRatio="true">
                <image>
                   <Image url="@../vectorImages/IMDb%20png.png" />
@@ -155,11 +152,6 @@
                </image>
             </ImageView>
             <Text fill="#e4a3a3" layoutX="299.0" layoutY="33.0" strokeType="OUTSIDE" strokeWidth="0.0" text="92%" />
-            <ImageView fx:id="paneMovie3" fitHeight="211.0" fitWidth="168.0" layoutX="21.0" layoutY="28.0" pickOnBounds="true" preserveRatio="true">
-               <image>
-                  <Image url="@../movieImages/m_3Poster.jpg" />
-               </image>
-            </ImageView>
             <Text fill="WHITE" layoutX="186.0" layoutY="66.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Howl's Moving Castle">
                <font>
                   <Font name="Franklin Gothic Medium Cond" size="14.0" />
@@ -180,6 +172,7 @@
       </Pane>
       <Pane fx:id="movie2InfoPane" layoutX="253.0" layoutY="117.0" onMouseClicked="#switchToInfo" onMouseExited="#hideInfoMovie2" prefHeight="278.0" prefWidth="391.0" style="-fx-background-color: #333333;" visible="false">
          <children>
+            <ImageView fx:id="paneMovie2" fitHeight="211.0" fitWidth="168.0" layoutX="14.0" layoutY="26.0" pickOnBounds="true" preserveRatio="true" />
             <ImageView fitHeight="25.0" fitWidth="43.0" layoutX="177.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
                <image>
                   <Image url="@../vectorImages/IMDb%20png.png" />
@@ -208,15 +201,11 @@
                </font>
             </Text>
             <Text fill="#ffffff80" layoutX="175.0" layoutY="98.0" strokeType="OUTSIDE" strokeWidth="0.0" text="2023" />
-            <ImageView fx:id="paneMovie2" fitHeight="211.0" fitWidth="168.0" layoutX="14.0" layoutY="26.0" pickOnBounds="true" preserveRatio="true">
-               <image>
-                  <Image url="@../movieImages/m_2Poster.jpg" />
-               </image>
-            </ImageView>
          </children>
       </Pane>
       <Pane fx:id="movie4InfoPane" layoutX="671.0" layoutY="117.0" onMouseClicked="#switchToInfo" onMouseExited="#hideInfoMovie4" prefHeight="267.0" prefWidth="406.0" style="-fx-background-color: #333333;" visible="false">
          <children>
+            <ImageView fx:id="paneMovie4" fitHeight="211.0" fitWidth="168.0" layoutX="20.0" layoutY="26.0" pickOnBounds="true" preserveRatio="true" />
             <ImageView fitHeight="25.0" fitWidth="43.0" layoutX="183.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
                <image>
                   <Image url="@../vectorImages/IMDb%20png.png" />
@@ -245,15 +234,11 @@
                </font>
             </Text>
             <Text fill="#ffffff80" layoutX="181.0" layoutY="98.0" strokeType="OUTSIDE" strokeWidth="0.0" text="2018" />
-            <ImageView fx:id="paneMovie4" fitHeight="211.0" fitWidth="168.0" layoutX="20.0" layoutY="26.0" pickOnBounds="true" preserveRatio="true">
-               <image>
-                  <Image url="@../movieImages/m_4Poster.jpg" />
-               </image>
-            </ImageView>
          </children>
       </Pane>
       <Pane fx:id="movie5InfoPane" layoutX="669.0" layoutY="111.0" onMouseClicked="#switchToInfo" onMouseExited="#hideInfoMovie5" prefHeight="278.0" prefWidth="406.0" style="-fx-background-color: #333333;" visible="false">
          <children>
+            <ImageView fx:id="paneMovie5" fitHeight="211.0" fitWidth="168.0" layoutX="249.0" layoutY="43.0" pickOnBounds="true" preserveRatio="true" />
             <ImageView fitHeight="25.0" fitWidth="43.0" layoutX="32.0" layoutY="19.0" pickOnBounds="true" preserveRatio="true">
                <image>
                   <Image url="@../vectorImages/IMDb%20png.png" />
@@ -282,15 +267,11 @@
                </font>
             </Text>
             <Text fill="#ffffff80" layoutX="30.0" layoutY="103.0" strokeType="OUTSIDE" strokeWidth="0.0" text="2023" />
-            <ImageView fx:id="paneMovie5" fitHeight="211.0" fitWidth="168.0" layoutX="249.0" layoutY="43.0" pickOnBounds="true" preserveRatio="true">
-               <image>
-                  <Image url="@../movieImages/m_5Poster.png" />
-               </image>
-            </ImageView>
          </children>
       </Pane>
       <Pane fx:id="movie6InfoPane" layoutX="43.0" layoutY="401.0" onMouseClicked="#switchToInfo" onMouseExited="#hideInfoMovie6" prefHeight="278.0" prefWidth="398.0" style="-fx-background-color: #333333;" visible="false">
          <children>
+            <ImageView fx:id="paneMovie6" fitHeight="211.0" fitWidth="168.0" layoutX="14.0" layoutY="38.0" pickOnBounds="true" preserveRatio="true" />
             <ImageView fitHeight="25.0" fitWidth="43.0" layoutX="177.0" layoutY="26.0" pickOnBounds="true" preserveRatio="true">
                <image>
                   <Image url="@../vectorImages/IMDb%20png.png" />
@@ -319,15 +300,11 @@
                </font>
             </Text>
             <Text fill="#ffffff80" layoutX="175.0" layoutY="110.0" strokeType="OUTSIDE" strokeWidth="0.0" text="2023" />
-            <ImageView fx:id="paneMovie6" fitHeight="211.0" fitWidth="168.0" layoutX="14.0" layoutY="38.0" pickOnBounds="true" preserveRatio="true">
-               <image>
-                  <Image url="@../movieImages/m_6Poster.png" />
-               </image>
-            </ImageView>
          </children>
       </Pane>
       <Pane fx:id="movie7InfoPane" layoutX="245.0" layoutY="401.0" onMouseClicked="#switchToInfo" onMouseExited="#hideInfoMovie7" prefHeight="278.0" prefWidth="398.0" style="-fx-background-color: #333333;" visible="false">
          <children>
+            <ImageView fx:id="paneMovie7" fitHeight="211.0" fitWidth="168.0" layoutX="16.0" layoutY="38.0" pickOnBounds="true" preserveRatio="true" />
             <ImageView fitHeight="25.0" fitWidth="43.0" layoutX="179.0" layoutY="26.0" pickOnBounds="true" preserveRatio="true">
                <image>
                   <Image url="@../vectorImages/IMDb%20png.png" />
@@ -356,15 +333,11 @@
                </font>
             </Text>
             <Text fill="#ffffff80" layoutX="177.0" layoutY="110.0" strokeType="OUTSIDE" strokeWidth="0.0" text="2023" />
-            <ImageView fx:id="paneMovie7" fitHeight="211.0" fitWidth="168.0" layoutX="16.0" layoutY="38.0" pickOnBounds="true" preserveRatio="true">
-               <image>
-                  <Image url="@../movieImages/m_7Poster.jpg" />
-               </image>
-            </ImageView>
          </children>
       </Pane>
       <Pane fx:id="movie8InfoPane" layoutX="460.0" layoutY="401.0" onMouseClicked="#switchToInfo" onMouseExited="#hideInfoMovie8" prefHeight="278.0" prefWidth="398.0" style="-fx-background-color: #333333;" visible="false">
          <children>
+            <ImageView fx:id="paneMovie8" fitHeight="211.0" fitWidth="168.0" layoutX="19.0" layoutY="37.0" pickOnBounds="true" preserveRatio="true" />
             <ImageView fitHeight="25.0" fitWidth="43.0" layoutX="182.0" layoutY="25.0" pickOnBounds="true" preserveRatio="true">
                <image>
                   <Image url="@../vectorImages/IMDb%20png.png" />
@@ -393,15 +366,11 @@
                </font>
             </Text>
             <Text fill="#ffffff80" layoutX="180.0" layoutY="109.0" strokeType="OUTSIDE" strokeWidth="0.0" text="2022" />
-            <ImageView fx:id="paneMovie8" fitHeight="211.0" fitWidth="168.0" layoutX="19.0" layoutY="37.0" pickOnBounds="true" preserveRatio="true">
-               <image>
-                  <Image url="@../movieImages/m_8Poster.jpg" />
-               </image>
-            </ImageView>
          </children>
       </Pane>
       <Pane fx:id="movie9InfoPane" layoutX="669.0" layoutY="408.0" onMouseClicked="#switchToInfo" onMouseExited="#hideInfoMovie9" prefHeight="278.0" prefWidth="414.0" style="-fx-background-color: #333333;" visible="false">
          <children>
+            <ImageView fx:id="paneMovie9" fitHeight="211.0" fitWidth="168.0" layoutX="15.0" layoutY="28.0" pickOnBounds="true" preserveRatio="true" />
             <ImageView fitHeight="25.0" fitWidth="43.0" layoutX="178.0" layoutY="16.0" pickOnBounds="true" preserveRatio="true">
                <image>
                   <Image url="@../vectorImages/IMDb%20png.png" />
@@ -430,15 +399,11 @@
                </font>
             </Text>
             <Text fill="#ffffff80" layoutX="176.0" layoutY="100.0" strokeType="OUTSIDE" strokeWidth="0.0" text="2019" />
-            <ImageView fx:id="paneMovie9" fitHeight="211.0" fitWidth="168.0" layoutX="15.0" layoutY="28.0" pickOnBounds="true" preserveRatio="true">
-               <image>
-                  <Image url="@../movieImages/m_9Poster.jpg" />
-               </image>
-            </ImageView>
          </children>
       </Pane>
       <Pane fx:id="movie10InfoPane" layoutX="673.0" layoutY="407.0" onMouseClicked="#switchToInfo" onMouseExited="#hideInfoMovie10" prefHeight="278.0" prefWidth="382.0" style="-fx-background-color: #333333;" visible="false">
          <children>
+            <ImageView fx:id="paneMovie10" fitHeight="211.0" fitWidth="168.0" layoutX="229.0" layoutY="34.0" pickOnBounds="true" preserveRatio="true" />
             <ImageView fitHeight="25.0" fitWidth="43.0" layoutX="17.0" layoutY="24.0" pickOnBounds="true" preserveRatio="true">
                <image>
                   <Image url="@../vectorImages/IMDb%20png.png" />
@@ -467,11 +432,6 @@
                </font>
             </Text>
             <Text fill="#ffffff80" layoutX="15.0" layoutY="108.0" strokeType="OUTSIDE" strokeWidth="0.0" text="2001" />
-            <ImageView fx:id="paneMovie10" fitHeight="211.0" fitWidth="168.0" layoutX="229.0" layoutY="34.0" pickOnBounds="true" preserveRatio="true">
-               <image>
-                  <Image url="@../movieImages/m_10Poster.jpg" />
-               </image>
-            </ImageView>
          </children>
       </Pane>
       <Pane fx:id="optionPane" layoutX="-261.0" layoutY="-2.0" prefHeight="730.0" prefWidth="261.0" style="-fx-background-color: #000000;">
