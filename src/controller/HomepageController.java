@@ -89,10 +89,19 @@ public class HomepageController {
         firstYear("M_1", yearText);
         firstCreatedby("M_1", createdByText);
 
+
         scrollButton.setOnMouseClicked(event -> moveImageDown());
         optionButton.setOnMouseClicked(event -> movePaneRight());
         optionPane.setOnMouseClicked(event -> movePaneLeft());
-
+        optionPane.getChildren().get(0).setOnMouseClicked(event -> {
+            try {
+                switchToWallet(event);
+            } catch (IOException e) {
+                // TODO Auto-generated catch block
+                e.printStackTrace();
+            }
+        });
+        
         spotscreen.setEffect(new DropShadow(20, Color.BLACK));
         sidescreen1.setEffect(new DropShadow(20, Color.BLACK));
         sidescreen2.setEffect(new DropShadow(20, Color.BLACK));
@@ -651,6 +660,14 @@ public class HomepageController {
         public void switchToPayment(MouseEvent event) throws IOException {
         MoviePaymentController.setMovieChoosen(movieNames[movieIndex]);
         Parent root = FXMLLoader.load(getClass().getResource("/view/moviePayment.fxml"));
+        Stage stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
+        Scene scene = new Scene(root);
+        stage.setScene(scene);
+        stage.show();
+    }
+
+    public void switchToWallet(MouseEvent event) throws IOException {
+        Parent root = FXMLLoader.load(getClass().getResource("/view/walletProfile.fxml"));
         Stage stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
         Scene scene = new Scene(root);
         stage.setScene(scene);
