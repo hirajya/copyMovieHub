@@ -221,6 +221,6 @@
             <Image url="@../vectorImages/Lock%20icon.png" />
          </image>
       </ImageView>
-      <VBox fx:id="purchasesBox" layoutX="175.0" layoutY="536.0" prefHeight="94.0" prefWidth="439.0" />
+      <VBox fx:id="purchasesBox" layoutX="175.0" layoutY="527.0" prefHeight="94.0" prefWidth="438.0" />
    </children>
 </AnchorPane>

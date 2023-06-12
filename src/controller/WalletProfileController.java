@@ -12,6 +12,7 @@ import javafx.scene.image.ImageView;
 import javafx.scene.input.MouseEvent;
 import javafx.scene.layout.Pane;
 import javafx.scene.layout.VBox;
+import javafx.scene.paint.Color;
 import javafx.scene.text.Text;
 import javafx.stage.Stage;
 import model.movie;
@@ -46,11 +47,15 @@ public class WalletProfileController {
         scrollPane.setFitToWidth(true);
         scrollPane.setFitToHeight(true);
         // addPurchaseHistory("M_1");
-        // addPurchaseHistory("M_9");
+        // addPurchaseHistory("M_2");
         // addPurchaseHistory("M_3");
+        // addPurchaseHistory("M_4");
+        // addPurchaseHistory("M_5");
+        // addPurchaseHistory("M_6");
+        // addPurchaseHistory("M_7");
+        // addPurchaseHistory("M_8");
+        // addPurchaseHistory("M_9");
         // addPurchaseHistory("M_10");
-
-
     }
 
     public void addPurchaseHistory(String movieClass) {
@@ -66,7 +71,9 @@ public class WalletProfileController {
                 String movieYear = movieInstance.getYearMade();
                 String date = giveDateNTime();
                 String inputData = movieTitle + "(" + movieYear +")  -  Php " + moviePrice + "  -  " + date;
-                purchasesBox.getChildren().add(new Text(inputData));
+                Text text = new Text(inputData);
+                text.setFill(Color.WHITE);
+                purchasesBox.getChildren().add(text);
 
 
             }
