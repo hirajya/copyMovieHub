@@ -17,12 +17,12 @@
                   <Image url="@../vectorImages/A_black_image.jpg" />
                </image>
             </ImageView>
-            <ImageView fitHeight="905.0" fitWidth="1343.0" layoutX="30.0" layoutY="435.0" opacity="0.4" pickOnBounds="true" preserveRatio="true">
+            <ImageView fx:id="downBlack" fitHeight="905.0" fitWidth="1343.0" layoutX="30.0" layoutY="435.0" opacity="0.4" pickOnBounds="true" preserveRatio="true">
                <image>
                   <Image url="@../vectorImages/A_black_image.jpg" />
                </image>
             </ImageView>
-            <ImageView fx:id="spotscreen" fitHeight="334.0" fitWidth="223.0" layoutX="127.0" layoutY="329.0" pickOnBounds="true" preserveRatio="true" />
+            <ImageView fx:id="spotscreen" fitHeight="334.0" fitWidth="223.0" layoutX="127.0" layoutY="329.0" onMouseEntered="#fadeOpacityToLow" onMouseExited="#fadeOpacityToHigh" pickOnBounds="true" preserveRatio="true" />
             <ImageView fx:id="sidescreen2" fitHeight="166.0" fitWidth="124.0" layoutX="595.0" layoutY="450.0" pickOnBounds="true" preserveRatio="true" />
             <ImageView fx:id="sidescreen3" fitHeight="166.0" fitWidth="133.0" layoutX="748.0" layoutY="450.0" pickOnBounds="true" preserveRatio="true" />
             <ImageView fx:id="sidescreen1" fitHeight="166.0" fitWidth="157.0" layoutX="439.0" layoutY="450.0" pickOnBounds="true" preserveRatio="true" />

@@ -63,6 +63,9 @@ public class HomepageController {
     @FXML 
     Pane movie1InfoPane, movie2InfoPane, movie3InfoPane, movie4InfoPane, movie5InfoPane, movie6InfoPane, movie7InfoPane, movie8InfoPane, movie9InfoPane, movie10InfoPane;
 
+    @FXML
+    ImageView downBlack;
+
     
     public void initialize() {
         M_1 m1 = new M_1();
@@ -79,10 +82,10 @@ public class HomepageController {
         firstScreenBig("M_1", bigscreen);
 
         firstScreen("M_1", spotscreen);
-        firstScreen("M_2", sidescreen1);
-        firstScreen("M_3", sidescreen2);
-        firstScreen("M_4", sidescreen3);
-        firstScreen("M_5", sidescreen4);
+        firstSideScreen("M_2", sidescreen1);
+        firstSideScreen("M_3", sidescreen2);
+        firstSideScreen("M_4", sidescreen3);
+        firstSideScreen("M_5", sidescreen4);
 
         firstTitle("M_1", movieNameText);
         firstDescrip("M_1", descriptionText);
@@ -576,6 +579,22 @@ public class HomepageController {
         }
     }
 
+    public void firstSideScreen(String movieClass, ImageView imagenode) {
+        try {
+            String className = "model." + movieClass; // M_1, "M_1"
+            Class<?> clazz = Class.forName(className);
+            Object instance = clazz.getDeclaredConstructor().newInstance();
+
+            if (instance instanceof movie) {
+                movie movieInstance = (movie) instance;
+                ImageView movieImage = movieInstance.getPosterImage();
+                fadeImageView(imagenode, movieImage);
+            }
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+    }
+
     public void firstScreenBig(String movieClass, ImageView imagenode) {
         try {
             String className = "model." + movieClass; // M_1, "M_1"
@@ -672,5 +691,38 @@ public class HomepageController {
         Scene scene = new Scene(root);
         stage.setScene(scene);
         stage.show();
+    }
+
+    public void fadeOpacityToLow() {
+        double targetOpacity = 0.0;
+        Duration duration = Duration.seconds(1); 
+
+        fadeOpacity(sidescreen1, targetOpacity, duration);
+        fadeOpacity(sidescreen2, targetOpacity, duration);
+        fadeOpacity(sidescreen3, targetOpacity, duration);
+        fadeOpacity(sidescreen4, targetOpacity, duration);
+        fadeOpacity(downBlack, 0.0, duration);
+    }
+
+    public void fadeOpacityToHigh() {
+        double targetOpacity = 1.0;
+        Duration duration = Duration.seconds(1); 
+        fadeOpacity(sidescreen1, targetOpacity, duration);
+        fadeOpacity(sidescreen2, targetOpacity, duration);
+        fadeOpacity(sidescreen3, targetOpacity, duration);
+        fadeOpacity(sidescreen4, targetOpacity, duration);
+        fadeOpacity(downBlack, 0.5, duration);
+
+    }
+
+    private void fadeOpacity(Node node, double targetOpacity, Duration duration) {
+        double initialOpacity = node.getOpacity();
+
+        KeyValue keyValue = new KeyValue(node.opacityProperty(), targetOpacity);
+        KeyFrame keyFrame = new KeyFrame(duration, keyValue);
+
+        Timeline timeline = new Timeline(keyFrame);
+        timeline.setOnFinished(event -> node.setOpacity(targetOpacity));
+        timeline.play();
     }
 }
