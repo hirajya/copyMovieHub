@@ -4,12 +4,14 @@ import java.io.File;
 import java.net.URL;
 import java.util.ResourceBundle;
 
+import javafx.animation.FadeTransition;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
 import javafx.scene.media.Media;
 import javafx.scene.media.MediaPlayer;
 import javafx.scene.media.MediaView;
 import javafx.scene.text.Text;
+import javafx.util.Duration;
 import model.movie;
 
 public class MoviePaymentController implements Initializable{
@@ -21,6 +23,9 @@ public class MoviePaymentController implements Initializable{
 
     @FXML 
     private MediaView mediaView;
+
+    @FXML
+    private Text titleText;
 
     private File file;
     private Media media;
@@ -34,6 +39,7 @@ public class MoviePaymentController implements Initializable{
         System.out.println("Initializing MoviePaymentController");
         movieee.setText(movieChoosen);
         videoTrailer();
+        setMovieTitle();
     }
 
     public void playMedia() {
@@ -63,6 +69,38 @@ public class MoviePaymentController implements Initializable{
             } catch (Exception e) {
                 e.printStackTrace();
         }
+    }
+
+    public void setMovieTitle() {
+        try {
+            String className = "model." + movieChoosen; // "model.M_9"
+            Class<?> clazz = Class.forName(className);
+            Object instance = clazz.getDeclaredConstructor().newInstance();
+
+            if (instance instanceof movie) {
+                movie movieInstance = (movie) instance;
+                String movieTitle = movieInstance.getName();
+                fadeText(titleText, movieTitle);
+            }
+            } catch (Exception e) {
+                e.printStackTrace();
+        }
+    }
+
+    private void fadeText(Text textNode, String newText) {
+        FadeTransition fadeOutTransition = new FadeTransition(Duration.millis(1000), textNode);
+        fadeOutTransition.setFromValue(1.0);
+        fadeOutTransition.setToValue(0.0);
+        
+        fadeOutTransition.setOnFinished(event -> {
+            textNode.setText(newText);
+            FadeTransition fadeInTransition = new FadeTransition(Duration.millis(1000), textNode);
+            fadeInTransition.setFromValue(0.0);
+            fadeInTransition.setToValue(1.0);
+            fadeInTransition.play();
+        });
+    
+        fadeOutTransition.play();
     }
 
 }
