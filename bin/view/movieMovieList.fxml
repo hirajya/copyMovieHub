@@ -436,12 +436,12 @@
       </Pane>
       <Pane fx:id="optionPane" layoutX="-115.0" layoutY="-7.0" prefHeight="724.0" prefWidth="115.0" style="-fx-background-color: #000000;">
          <children>
-            <Text fill="WHITE" layoutX="31.0" layoutY="178.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Profile">
+            <Text fill="WHITE" layoutX="31.0" layoutY="178.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Wallet">
                <font>
                   <Font name="Franklin Gothic Medium Cond" size="22.0" />
                </font>
             </Text>
-            <Text fill="WHITE" layoutX="31.0" layoutY="131.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Home">
+            <Text fill="WHITE" layoutX="31.0" layoutY="131.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Profile">
                <font>
                   <Font name="Franklin Gothic Medium Cond" size="22.0" />
                </font>

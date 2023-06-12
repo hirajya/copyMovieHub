@@ -7,10 +7,16 @@ import javafx.fxml.FXMLLoader;
 import javafx.scene.Node;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
+import javafx.scene.control.ScrollPane;
+import javafx.scene.image.ImageView;
 import javafx.scene.input.MouseEvent;
 import javafx.scene.layout.Pane;
+import javafx.scene.layout.VBox;
 import javafx.scene.text.Text;
 import javafx.stage.Stage;
+import model.movie;
+import java.time.LocalDateTime;
+import java.time.format.DateTimeFormatter;
 
 public class WalletProfileController {
 
@@ -19,6 +25,11 @@ public class WalletProfileController {
 
     @FXML
     Text moneyAmt;
+
+    @FXML
+    VBox purchasesBox;
+
+    
 
     public void initialize() {
         moneyAmt.setText(String.valueOf(HomepageController.moneyAmount) + ".00 PHP");
@@ -30,6 +41,38 @@ public class WalletProfileController {
                 e.printStackTrace();
             }
         });
+        ScrollPane scrollPane = new ScrollPane();
+        scrollPane.setContent(purchasesBox);
+        scrollPane.setFitToWidth(true);
+        scrollPane.setFitToHeight(true);
+        // addPurchaseHistory("M_1");
+        // addPurchaseHistory("M_9");
+        // addPurchaseHistory("M_3");
+        // addPurchaseHistory("M_10");
+
+
+    }
+
+    public void addPurchaseHistory(String movieClass) {
+        try {
+            String className = "model." + movieClass; // "model.M_1"
+            Class<?> clazz = Class.forName(className); // model.M_1
+            Object instance = clazz.getDeclaredConstructor().newInstance(); // instance = M_1
+
+            if (instance instanceof movie) {
+                movie movieInstance = (movie) instance; // movieInstance = M_1
+                String movieTitle = movieInstance.getName(); // movieInstance.getImage() == M_1.getImage()
+                String moviePrice = "400.00";
+                String movieYear = movieInstance.getYearMade();
+                String date = giveDateNTime();
+                String inputData = movieTitle + "(" + movieYear +")  -  Php " + moviePrice + "  -  " + date;
+                purchasesBox.getChildren().add(new Text(inputData));
+
+
+            }
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
     }
 
     public void switchToHomepage(MouseEvent event) throws IOException {
@@ -38,5 +81,13 @@ public class WalletProfileController {
         Scene scene = new Scene(root);
         stage.setScene(scene);
         stage.show();
+    }
+
+    public String giveDateNTime() {
+        LocalDateTime currentDateTime = LocalDateTime.now();
+        DateTimeFormatter formatter = DateTimeFormatter.ofPattern("yyyy-MM-dd HH:mm:ss");
+        String formattedDateTime = currentDateTime.format(formatter);
+
+        return formattedDateTime;
     }
 }

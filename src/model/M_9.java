@@ -20,6 +20,11 @@ public class M_9 implements movie{
     private String actor1 = "Liza Soberano";
     private String actor2 = "Enrique Gil";
     private String actor3 = "Sylvia Sanchez";
+    private Boolean isPurchased = false;
+
+    public boolean getIsPurchased() {
+        return isPurchased;
+    }
 
     public String getName() {
         return name;

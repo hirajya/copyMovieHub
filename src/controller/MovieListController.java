@@ -120,6 +120,14 @@ public class MovieListController {
         scrollButton2.setOnMouseClicked(event -> moveScrollUp());
         optionButton.setOnMouseClicked(event -> movePaneRight());
         optionPane.setOnMouseClicked(event -> movePaneLeft());
+        optionPane.getChildren().get(0).setOnMouseClicked(event -> {
+            try {
+                switchToWallet(event);
+            } catch (IOException e) {
+                // TODO Auto-generated catch block
+                e.printStackTrace();
+            }
+        });
 
         DropShadow dropShadow = new DropShadow();
         moviePic1.setEffect(new DropShadow(20, Color.BLACK));
@@ -540,6 +548,14 @@ public class MovieListController {
         });
     
         fadeOutTransition.play();
+    }
+
+    public void switchToWallet(MouseEvent event) throws IOException {
+        Parent root = FXMLLoader.load(getClass().getResource("/view/walletProfile.fxml"));
+        Stage stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
+        Scene scene = new Scene(root);
+        stage.setScene(scene);
+        stage.show();
     }
     
 }

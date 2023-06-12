@@ -20,6 +20,11 @@ public class M_2 implements movie{
     private String actor1 = "Michael B. Jordan";
     private String actor2 = "Sylvester Stallone";
     private String actor3 = "Tessa Thompson";
+    private Boolean isPurchased = false;
+
+    public boolean getIsPurchased() {
+        return isPurchased;
+    }
 
     public String getName() {
         return name;
