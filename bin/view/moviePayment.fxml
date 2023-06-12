@@ -1,5 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.media.MediaView?>
 <?import javafx.scene.text.Font?>
@@ -12,6 +14,16 @@
       <Text fx:id="titleText" fill="WHITE" layoutX="57.0" layoutY="640.0" strokeType="OUTSIDE" strokeWidth="0.0">
          <font>
             <Font name="Franklin Gothic Medium Cond" size="27.0" />
+         </font>
+      </Text>
+      <ImageView fx:id="homeButton" fitHeight="31.0" fitWidth="22.0" layoutX="37.0" layoutY="24.0" onMouseClicked="#switchToHomepage" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../vectorImages/Home%20icon.png" />
+         </image>
+      </ImageView>
+      <Text fill="WHITE" layoutX="97.0" layoutY="43.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Payment">
+         <font>
+            <Font name="Franklin Gothic Medium Cond" size="24.0" />
          </font>
       </Text>
    </children>
