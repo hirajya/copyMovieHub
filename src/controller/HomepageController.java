@@ -31,7 +31,8 @@ import model.*;
 
 public class HomepageController {
 
-    static int moneyAmount = 1000;
+    static int moneyAmount = 1000; 
+
 
     @FXML
     Pane optionPane;
@@ -79,18 +80,18 @@ public class HomepageController {
         M_9 m9 = new M_9();
         M_10 m10 = new M_10();
 
-        firstScreenBig("M_1", bigscreen);
+        firstScreenBig(movieNames[movieIndex], bigscreen);
 
-        firstScreen("M_1", spotscreen);
-        firstSideScreen("M_2", sidescreen1);
-        firstSideScreen("M_3", sidescreen2);
-        firstSideScreen("M_4", sidescreen3);
-        firstSideScreen("M_5", sidescreen4);
+        firstScreen(movieNames[movieIndex], spotscreen);
+        firstSideScreen(movieNames[movieIndexSide1], sidescreen1);
+        firstSideScreen(movieNames[movieIndexSide2], sidescreen2);
+        firstSideScreen(movieNames[movieIndexSide3], sidescreen3);
+        firstSideScreen(movieNames[movieIndexSide4], sidescreen4);
 
-        firstTitle("M_1", movieNameText);
-        firstDescrip("M_1", descriptionText);
-        firstYear("M_1", yearText);
-        firstCreatedby("M_1", createdByText);
+        firstTitle(movieNames[movieIndex], movieNameText);
+        firstDescrip(movieNames[movieIndex], descriptionText);
+        firstYear(movieNames[movieIndex], yearText);
+        firstCreatedby(movieNames[movieIndex], createdByText);
 
 
         scrollButton.setOnMouseClicked(event -> moveImageDown());
@@ -119,10 +120,10 @@ public class HomepageController {
 
     static String[] movieNames = {"M_1", "M_2", "M_3", "M_4", "M_5", "M_6", "M_7", "M_8", "M_9", "M_10"}; // movieNames[0] = "M_1" + .getDescription // "M_1" M_1
     static int movieIndex = 0;          // "M_2"
-    static int movieIndexSide1 = 1; // movieNames[movieIndex] = "M_1" "M_1".getDescription
-    static int movieIndexSide2 = 2; // 
-    static int movieIndexSide3 = 3;
-    static int movieIndexSide4 = 4;
+    static int movieIndexSide1 = movieIndex + 1; // movieNames[movieIndex] = "M_1" "M_1".getDescription
+    static int movieIndexSide2 = movieIndex + 2; // 
+    static int movieIndexSide3 = movieIndex + 3;
+    static int movieIndexSide4 = movieIndex + 4;
 
     public static void movieIndexIncrement() {
         if (movieIndex == movieNames.length - 1) {

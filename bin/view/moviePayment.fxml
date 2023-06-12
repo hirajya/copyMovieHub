@@ -11,7 +11,7 @@
    <children>
       <Text fx:id="movieee" fill="WHITE" layoutX="914.0" layoutY="217.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" />
       <MediaView fx:id="mediaView" fitHeight="500.0" fitWidth="750.0" layoutX="37.0" layoutY="97.0" />
-      <Text fx:id="titleText" fill="WHITE" layoutX="57.0" layoutY="640.0" strokeType="OUTSIDE" strokeWidth="0.0">
+      <Text fx:id="titleText" fill="WHITE" layoutX="57.0" layoutY="550.0" strokeType="OUTSIDE" strokeWidth="0.0">
          <font>
             <Font name="Franklin Gothic Medium Cond" size="27.0" />
          </font>

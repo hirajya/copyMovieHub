@@ -24,6 +24,8 @@ import model.movie;
 
 public class MoviePaymentController implements Initializable{
 
+    private int money = HomepageController.moneyAmount;
+
     @FXML
     ImageView homeButton;
 
@@ -122,4 +124,6 @@ public class MoviePaymentController implements Initializable{
         stage.setScene(scene);
         stage.show();
     }
+
+    
 }
