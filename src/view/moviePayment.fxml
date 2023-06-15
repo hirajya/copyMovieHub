@@ -1,20 +1,29 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import javafx.scene.control.CheckBox?>
 <?import javafx.scene.image.Image?>
 <?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
 <?import javafx.scene.media.MediaView?>
 <?import javafx.scene.text.Font?>
 <?import javafx.scene.text.Text?>
 
 <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="724.0" prefWidth="1140.0" style="-fx-background-color: #222222;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.MoviePaymentController">
    <children>
+      <ImageView fx:id="mainScreen" fitHeight="739.0" fitWidth="1172.0" layoutY="69.0" pickOnBounds="true" preserveRatio="true" />
+      <Pane layoutY="531.0" opacity="0.7" prefHeight="85.0" prefWidth="426.0" style="-fx-background-color: #111111;" />
       <MediaView fx:id="mediaView" fitHeight="500.0" fitWidth="750.0" layoutX="37.0" layoutY="97.0" />
       <Text fx:id="titleText" fill="WHITE" layoutX="57.0" layoutY="570.0" strokeType="OUTSIDE" strokeWidth="0.0">
          <font>
             <Font name="Franklin Gothic Medium Cond" size="27.0" />
          </font>
       </Text>
+      <ImageView fitHeight="439.0" fitWidth="253.0" layoutX="826.0" layoutY="97.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../vectorImages/Transparent%20but%20black%20bg.png" />
+         </image>
+      </ImageView>
       <ImageView fx:id="homeButton" fitHeight="31.0" fitWidth="22.0" layoutX="37.0" layoutY="24.0" onMouseClicked="#switchToHomepage" pickOnBounds="true" preserveRatio="true">
          <image>
             <Image url="@../vectorImages/Home%20icon.png" />
@@ -25,35 +34,72 @@
             <Font name="Franklin Gothic Medium Cond" size="24.0" />
          </font>
       </Text>
-      <Text fx:id="movieYearText" fill="WHITE" layoutX="57.0" layoutY="600.0" strokeType="OUTSIDE" strokeWidth="0.0">
+      <Text fx:id="lengthText" fill="WHITE" layoutX="57.0" layoutY="600.0" strokeType="OUTSIDE" strokeWidth="0.0">
          <font>
             <Font size="20.0" />
          </font>
       </Text>
-      <Text fx:id="ratingText" fill="WHITE" layoutX="600.0" layoutY="570.0" strokeType="OUTSIDE" strokeWidth="0.0">
-         <font>
-            <Font name="Franklin Gothic Medium Cond" size="23.0" />
-         </font>
-      </Text>
-      <ImageView fitHeight="27.0" fitWidth="47.0" layoutX="547.0" layoutY="547.0" pickOnBounds="true" preserveRatio="true">
-         <image>
-            <Image url="@../vectorImages/IMDb%20png.png" />
-         </image>
-      </ImageView>
-      <ImageView fitHeight="394.0" fitWidth="247.0" layoutX="826.0" layoutY="97.0" pickOnBounds="true" preserveRatio="true">
-         <image>
-            <Image url="@../vectorImages/Transparent%20rectangle%20bg.png" />
-         </image>
-      </ImageView>
-      <ImageView fitHeight="78.0" fitWidth="240.0" layoutX="825.0" layoutY="97.0" pickOnBounds="true" preserveRatio="true">
+      <ImageView fitHeight="85.0" fitWidth="272.0" layoutX="825.0" layoutY="97.0" pickOnBounds="true" preserveRatio="true">
          <image>
             <Image url="@../vectorImages/current%20balance%20bg.png" />
          </image>
       </ImageView>
-      <ImageView fitHeight="31.0" fitWidth="158.0" layoutX="881.0" layoutY="443.0" pickOnBounds="true" preserveRatio="true">
+      <ImageView fx:id="cashinImage" fitHeight="49.0" fitWidth="154.0" layoutX="875.0" layoutY="466.0" onMouseClicked="#buyMovie" pickOnBounds="true" preserveRatio="true">
          <image>
             <Image url="@../vectorImages/cash%20in%20icon.png" />
          </image>
       </ImageView>
+      <Text fill="WHITE" layoutX="841.0" layoutY="123.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Current Balance:">
+         <font>
+            <Font name="Franklin Gothic Medium Cond" size="15.0" />
+         </font>
+      </Text>
+      <Text fx:id="moneyUserText" fill="WHITE" layoutX="841.0" layoutY="158.0" strokeType="OUTSIDE" strokeWidth="0.0" text="asdd">
+         <font>
+            <Font name="Franklin Gothic Medium Cond" size="27.0" />
+         </font>
+      </Text>
+      <Text fill="WHITE" layoutX="841.0" layoutY="204.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Movie cost:">
+         <font>
+            <Font name="Franklin Gothic Medium Cond" size="15.0" />
+         </font>
+      </Text>
+      <Text fx:id="movieCostText" fill="WHITE" layoutX="842.0" layoutY="231.0" strokeType="OUTSIDE" strokeWidth="0.0" text="400.00 Php">
+         <font>
+            <Font name="Franklin Gothic Medium Cond" size="24.0" />
+         </font>
+      </Text>
+      <Text fill="WHITE" layoutX="841.0" layoutY="267.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Balance after purchased:">
+         <font>
+            <Font name="Franklin Gothic Medium Cond" size="15.0" />
+         </font>
+      </Text>
+      <Text fx:id="balanceText" fill="WHITE" layoutX="843.0" layoutY="299.0" strokeType="OUTSIDE" strokeWidth="0.0" text="asdd">
+         <font>
+            <Font name="Franklin Gothic Medium Cond" size="24.0" />
+         </font>
+      </Text>
+      <Text fx:id="cashinText" fill="WHITE" layoutX="910.0" layoutY="490.0" onMouseClicked="#buyMovie" strokeType="OUTSIDE" strokeWidth="0.0" text="Cash in">
+         <font>
+            <Font name="Franklin Gothic Medium Cond" size="20.0" />
+         </font>
+      </Text>
+      <CheckBox layoutX="850.0" layoutY="374.0" mnemonicParsing="false" textFill="WHITE" />
+      <CheckBox layoutX="850.0" layoutY="407.0" mnemonicParsing="false" textFill="WHITE" />
+      <Text fill="WHITE" layoutX="896.0" layoutY="387.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Terms &amp; Condition">
+         <font>
+            <Font name="Franklin Gothic Medium Cond" size="14.0" />
+         </font>
+      </Text>
+      <Text fill="WHITE" layoutX="896.0" layoutY="421.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Confirmation of Payment">
+         <font>
+            <Font name="Franklin Gothic Medium Cond" size="14.0" />
+         </font>
+      </Text>
+      <Text fx:id="moneyWarning" fill="#d00d0d" layoutX="843.0" layoutY="453.0" strokeType="OUTSIDE" strokeWidth="0.0" text="*Money Insufficient.">
+         <font>
+            <Font name="Franklin Gothic Medium Cond" size="16.0" />
+         </font>
+      </Text>
    </children>
 </AnchorPane>

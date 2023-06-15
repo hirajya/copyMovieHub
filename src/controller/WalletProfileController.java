@@ -18,6 +18,7 @@ import javafx.stage.Stage;
 import model.movie;
 import java.time.LocalDateTime;
 import java.time.format.DateTimeFormatter;
+import java.util.ArrayList;
 
 public class WalletProfileController {
 
@@ -29,6 +30,8 @@ public class WalletProfileController {
 
     @FXML
     VBox purchasesBox;
+
+    static ArrayList<String> purchaseList = new ArrayList<>();
 
     
 
@@ -46,16 +49,7 @@ public class WalletProfileController {
         scrollPane.setContent(purchasesBox);
         scrollPane.setFitToWidth(true);
         scrollPane.setFitToHeight(true);
-        // addPurchaseHistory("M_1");
-        // addPurchaseHistory("M_2");
-        // addPurchaseHistory("M_3");
-        // addPurchaseHistory("M_4");
-        // addPurchaseHistory("M_5");
-        // addPurchaseHistory("M_6");
-        // addPurchaseHistory("M_7");
-        // addPurchaseHistory("M_8");
-        // addPurchaseHistory("M_9");
-        // addPurchaseHistory("M_10");
+        displayPurchaseHistory();
     }
 
     public void addPurchaseHistory(String movieClass) {
@@ -79,6 +73,12 @@ public class WalletProfileController {
             }
         } catch (Exception e) {
             e.printStackTrace();
+        }
+    }
+
+    public void displayPurchaseHistory() {
+        for (String movieClass : purchaseList) {
+            addPurchaseHistory(movieClass);
         }
     }
 

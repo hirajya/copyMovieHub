@@ -76,7 +76,7 @@
                   <Image url="@../vectorImages/Rectangular%20circle%20button.png" />
                </image>
             </ImageView>
-            <Text fill="WHITE" layoutX="941.0" layoutY="420.0" onMouseClicked="#switchToPayment" strokeType="OUTSIDE" strokeWidth="0.0" text="Rent">
+            <Text fill="WHITE" layoutX="944.0" layoutY="420.0" onMouseClicked="#switchToPayment" strokeType="OUTSIDE" strokeWidth="0.0" text="Buy">
                <font>
                   <Font name="Franklin Gothic Medium Cond" size="18.0" />
                </font></Text>

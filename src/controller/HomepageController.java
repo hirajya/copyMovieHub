@@ -34,6 +34,7 @@ public class HomepageController {
     static int moneyAmount = 1000; 
 
 
+
     @FXML
     Pane optionPane;
 
@@ -67,19 +68,11 @@ public class HomepageController {
     @FXML
     ImageView downBlack;
 
-    
-    public void initialize() {
-        M_1 m1 = new M_1();
-        M_2 m2 = new M_2();
-        M_3 m3 = new M_3();
-        M_4 m4 = new M_4();
-        M_5 m5 = new M_5();
-        M_6 m6 = new M_6();
-        M_7 m7 = new M_7();
-        M_8 m8 = new M_8();
-        M_9 m9 = new M_9();
-        M_10 m10 = new M_10();
+    static boolean initialized = false;
 
+    public void initialize() {  
+        initializeOnce();
+        
         firstScreenBig(movieNames[movieIndex], bigscreen);
 
         firstScreen(movieNames[movieIndex], spotscreen);
@@ -124,6 +117,22 @@ public class HomepageController {
     static int movieIndexSide2 = movieIndex + 2; // 
     static int movieIndexSide3 = movieIndex + 3;
     static int movieIndexSide4 = movieIndex + 4;
+
+    public void initializeOnce() {
+        if (initialized == false) {
+            M_1 m1 = new M_1();
+            M_2 m2 = new M_2();
+            M_3 m3 = new M_3();
+            M_4 m4 = new M_4();
+            M_5 m5 = new M_5();
+            M_6 m6 = new M_6();
+            M_7 m7 = new M_7();
+            M_8 m8 = new M_8();
+            M_9 m9 = new M_9();
+            M_10 m10 = new M_10();
+            initialized = true;
+        } 
+    }
 
     public static void movieIndexIncrement() {
         if (movieIndex == movieNames.length - 1) {

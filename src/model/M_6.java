@@ -22,6 +22,10 @@ public class M_6 implements movie{
     private String actor3 = "Nikita Efremov";
     private Boolean isPurchased = false;
 
+    public void setIsPurchased(boolean isPurchased) {
+        this.isPurchased = isPurchased;
+    }
+
     public boolean getIsPurchased() {
         return isPurchased;
     }

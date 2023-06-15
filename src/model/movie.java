@@ -20,6 +20,7 @@ public interface movie {
     String getActor2();
     String getActor3();
     boolean getIsPurchased();
+    void setIsPurchased(boolean isPurchased);
 
 } // abstract vs. interface
 // abstract - method ,variable

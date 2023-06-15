@@ -39,7 +39,6 @@ public class MovieInfoPageController {
             if (instance instanceof movie) {
                 movie movieInstance = (movie) instance; // movieInstance = M_1
                 ImageView movieImage = movieInstance.getMainImage(); // movieInstance.getImage() == M_1.getImage()
-                ImageView movieImagePoster = movieInstance.getPosterImage();
                 
                 fadeImageViewBig(bigScreenMovie, movieImage);
 

@@ -82,6 +82,10 @@ public class M_1 implements movie{
         return actor3;
     }
 
+    public void setIsPurchased(boolean isPurchased) {
+        this.isPurchased = isPurchased;
+    }
+
     @Override
     public ImageView getMainImage() {
         return new ImageView(imageMScreen);
