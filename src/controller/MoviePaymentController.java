@@ -29,16 +29,13 @@ public class MoviePaymentController implements Initializable{
     @FXML
     ImageView homeButton;
 
-    @FXML
-    Text movieee;
-
     static String movieChoosen = "M_5"; // Default movie
 
     @FXML 
     private MediaView mediaView;
 
     @FXML
-    private Text titleText;
+    private Text titleText, movieYearText, ratingText;
 
     private File file;
     private Media media;
@@ -50,9 +47,10 @@ public class MoviePaymentController implements Initializable{
 
     public void initialize(URL arg0, ResourceBundle arg1) {
         System.out.println("Initializing MoviePaymentController");
-        movieee.setText(movieChoosen);
         videoTrailer();
         setMovieTitle();
+        setMovieYear();
+        setMovieRating();
     }
 
     public void playMedia() {
@@ -94,6 +92,38 @@ public class MoviePaymentController implements Initializable{
                 movie movieInstance = (movie) instance;
                 String movieTitle = movieInstance.getName();
                 fadeText(titleText, movieTitle);
+            }
+            } catch (Exception e) {
+                e.printStackTrace();
+        }
+    }
+
+    public void setMovieYear() {
+        try {
+            String className = "model." + movieChoosen; // "model.M_9"
+            Class<?> clazz = Class.forName(className);
+            Object instance = clazz.getDeclaredConstructor().newInstance();
+
+            if (instance instanceof movie) {
+                movie movieInstance = (movie) instance;
+                String movieYear = movieInstance.getYearMade();
+                fadeText(movieYearText, movieYear);
+            }
+            } catch (Exception e) {
+                e.printStackTrace();
+        }
+    }
+
+    public void setMovieRating() {
+        try {
+            String className = "model." + movieChoosen; // "model.M_9"
+            Class<?> clazz = Class.forName(className);
+            Object instance = clazz.getDeclaredConstructor().newInstance();
+
+            if (instance instanceof movie) {
+                movie movieInstance = (movie) instance;
+                String movieRate = movieInstance.getRatePercent();
+                fadeText(ratingText, movieRate);
             }
             } catch (Exception e) {
                 e.printStackTrace();

@@ -9,9 +9,8 @@
 
 <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="724.0" prefWidth="1140.0" style="-fx-background-color: #222222;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.MoviePaymentController">
    <children>
-      <Text fx:id="movieee" fill="WHITE" layoutX="914.0" layoutY="217.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" />
       <MediaView fx:id="mediaView" fitHeight="500.0" fitWidth="750.0" layoutX="37.0" layoutY="97.0" />
-      <Text fx:id="titleText" fill="WHITE" layoutX="57.0" layoutY="550.0" strokeType="OUTSIDE" strokeWidth="0.0">
+      <Text fx:id="titleText" fill="WHITE" layoutX="57.0" layoutY="570.0" strokeType="OUTSIDE" strokeWidth="0.0">
          <font>
             <Font name="Franklin Gothic Medium Cond" size="27.0" />
          </font>
@@ -26,5 +25,35 @@
             <Font name="Franklin Gothic Medium Cond" size="24.0" />
          </font>
       </Text>
+      <Text fx:id="movieYearText" fill="WHITE" layoutX="57.0" layoutY="600.0" strokeType="OUTSIDE" strokeWidth="0.0">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Text>
+      <Text fx:id="ratingText" fill="WHITE" layoutX="600.0" layoutY="570.0" strokeType="OUTSIDE" strokeWidth="0.0">
+         <font>
+            <Font name="Franklin Gothic Medium Cond" size="23.0" />
+         </font>
+      </Text>
+      <ImageView fitHeight="27.0" fitWidth="47.0" layoutX="547.0" layoutY="547.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../vectorImages/IMDb%20png.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="394.0" fitWidth="247.0" layoutX="826.0" layoutY="97.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../vectorImages/Transparent%20rectangle%20bg.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="78.0" fitWidth="240.0" layoutX="825.0" layoutY="97.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../vectorImages/current%20balance%20bg.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="31.0" fitWidth="158.0" layoutX="881.0" layoutY="443.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../vectorImages/cash%20in%20icon.png" />
+         </image>
+      </ImageView>
    </children>
 </AnchorPane>
