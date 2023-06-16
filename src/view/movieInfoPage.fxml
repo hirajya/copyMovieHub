@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import javafx.scene.image.Image?>
 <?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.media.MediaView?>
 <?import javafx.scene.text.Font?>
 <?import javafx.scene.text.Text?>
 
@@ -12,6 +14,100 @@
             <Font size="18.0" />
          </font>
       </Text>
-      <ImageView fx:id="bigScreenMovie" fitHeight="740.0" fitWidth="1346.0" layoutX="-78.0" layoutY="-9.0" pickOnBounds="true" preserveRatio="true" />
+      <ImageView fx:id="bigScreenMovie" fitHeight="740.0" fitWidth="1346.0" layoutX="-67.0" layoutY="-8.0" pickOnBounds="true" preserveRatio="true" />
+      <ImageView fx:id="backButton" fitHeight="40.0" fitWidth="90.0" layoutX="49.0" layoutY="34.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../vectorImages/back%20icon.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="25.0" fitWidth="29.0" layoutX="963.0" layoutY="34.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../vectorImages/Search%20icon.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="35.0" fitWidth="34.0" layoutX="1014.0" layoutY="32.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../vectorImages/user%20icon.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="73.0" fitWidth="62.0" layoutX="1071.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../vectorImages/newlkogo.png" />
+         </image>
+      </ImageView>
+      <Text fx:id="movieNameText" fill="WHITE" layoutX="70.0" layoutY="179.0" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="343.0">
+         <font>
+            <Font name="Franklin Gothic Demi Cond" size="64.0" />
+         </font>
+      </Text>
+      <Text fill="WHITE" layoutX="42.0" layoutY="507.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Starring">
+         <font>
+            <Font name="Franklin Gothic Demi Cond" size="24.0" />
+         </font>
+      </Text>
+      <ImageView fitHeight="57.0" fitWidth="123.0" layoutX="42.0" layoutY="432.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../vectorImages/genre%20and%20year%20rectangle.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="57.0" fitWidth="123.0" layoutX="180.0" layoutY="432.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../vectorImages/genre%20and%20year%20rectangle.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="57.0" fitWidth="123.0" layoutX="314.0" layoutY="432.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../vectorImages/genre%20and%20year%20rectangle.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="57.0" fitWidth="123.0" layoutX="447.0" layoutY="432.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../vectorImages/genre%20and%20year%20rectangle.png" />
+         </image>
+      </ImageView>
+      <Text fx:id="movieReleaseDate" layoutX="89.0" layoutY="455.0" strokeType="OUTSIDE" strokeWidth="0.0">
+         <font>
+            <Font name="Franklin Gothic Demi Cond" size="16.0" />
+         </font>
+      </Text>
+      <Text fx:id="firstGenre" layoutX="217.0" layoutY="455.0" strokeType="OUTSIDE" strokeWidth="0.0">
+         <font>
+            <Font name="Franklin Gothic Demi Cond" size="16.0" />
+         </font>
+      </Text>
+      <Text fx:id="secondGenre" layoutX="349.0" layoutY="455.0" strokeType="OUTSIDE" strokeWidth="0.0">
+         <font>
+            <Font name="Franklin Gothic Demi Cond" size="16.0" />
+         </font>
+      </Text>
+      <Text fx:id="thirdGenre" layoutX="484.0" layoutY="455.0" strokeType="OUTSIDE" strokeWidth="0.0">
+         <font>
+            <Font name="Franklin Gothic Demi Cond" size="16.0" />
+         </font>
+      </Text>
+      <Text fill="#fffcfc8c" layoutX="71.0" layoutY="116.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Movie">
+         <font>
+            <Font name="Franklin Gothic Demi Cond" size="16.0" />
+         </font>
+      </Text>
+      <ImageView fx:id="starringActorUno" fitHeight="138.0" fitWidth="132.0" layoutX="23.0" layoutY="527.0" pickOnBounds="true" preserveRatio="true" />
+      <ImageView fx:id="starringActorSecond" fitHeight="138.0" fitWidth="132.0" layoutX="197.0" layoutY="527.0" pickOnBounds="true" preserveRatio="true" />
+      <ImageView fx:id="starringActorThird" fitHeight="138.0" fitWidth="132.0" layoutX="381.0" layoutY="527.0" pickOnBounds="true" preserveRatio="true" />
+      <Text fx:id="actorName1" fill="WHITE" layoutX="49.0" layoutY="690.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Text">
+         <font>
+            <Font name="Franklin Gothic Demi Cond" size="16.0" />
+         </font>
+      </Text>
+      <Text fx:id="actorName2" fill="WHITE" layoutX="223.0" layoutY="690.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Text">
+         <font>
+            <Font name="Franklin Gothic Demi Cond" size="16.0" />
+         </font>
+      </Text>
+      <Text fx:id="actorName3" fill="WHITE" layoutX="412.0" layoutY="690.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Text">
+         <font>
+            <Font name="Franklin Gothic Demi Cond" size="16.0" />
+         </font>
+      </Text>
+      <MediaView fx:id="movieTrailer" fitHeight="200.0" fitWidth="200.0" layoutX="628.0" layoutY="217.0" />
    </children>
 </AnchorPane>

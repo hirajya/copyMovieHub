@@ -21,6 +21,10 @@ public class M_1 implements movie{
     private String actor2 = "Zoe Saldana";
     private String actor3 = "Dave Bautista";
     private Boolean isPurchased = false;
+    private String starring1 = "/castImage/ChrisPratt.png";
+    private String starring2 = "/castImage/ZoeZaldana.png";
+    private String starring3 = "/castImage/DaveBautista.png";
+    
 
     public boolean getIsPurchased() {
         return isPurchased;
@@ -96,7 +100,16 @@ public class M_1 implements movie{
         return new ImageView(imagePoster);
     }
 
-
-
-
+     @Override
+    public ImageView getStarring1(){
+        return new ImageView(starring1);
+    }
+    @Override
+    public ImageView getStarring2(){
+        return new ImageView(starring2);
+    }
+    @Override
+    public ImageView getStarring3(){
+        return new ImageView(starring3);
+    }
 }

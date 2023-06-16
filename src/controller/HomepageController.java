@@ -240,10 +240,23 @@ public class HomepageController {
         System.out.println("Rent button clicked");
     }
 
+    @FXML
+    ImageView MovieInfo;
+
     public void infoButtonClicked() {
         System.out.println("Info button clicked");
         System.out.println(movieNames[movieIndex]);
 
+    }
+
+    public void switchToInfo(MouseEvent event) throws IOException {
+        MovieInfoPageController.setChoosenMovie(movieNames[movieIndex]);
+        MovieInfoPageController.fromHomePage = true;
+        Parent root = FXMLLoader.load(getClass().getResource("/view/movieInfoPage.fxml"));
+        Stage stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
+        Scene scene = new Scene(root);
+        stage.setScene(scene);
+        stage.show();
     }
 
     public void blackAppearDescrip() {

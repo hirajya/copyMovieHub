@@ -85,6 +85,7 @@ public class MoviePaymentController implements Initializable{
                 mediaPlayer = new MediaPlayer(media);
                 mediaView.setMediaPlayer(mediaPlayer);
                 mediaPlayer.setAutoPlay(true);
+                
             }
             } catch (Exception e) {
                 e.printStackTrace();

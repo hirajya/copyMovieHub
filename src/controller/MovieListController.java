@@ -348,6 +348,7 @@ public class MovieListController {
 
 
     public void switchToInfo(MouseEvent event) throws IOException {
+        MovieInfoPageController.fromHomePage = false;
         Parent root = FXMLLoader.load(getClass().getResource("/view/movieInfoPage.fxml"));
         Stage stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
         Scene scene = new Scene(root);

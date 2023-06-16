@@ -21,6 +21,9 @@ public class M_10 implements movie{
     private String actor2 = "Miyu Irino";
     private String actor3 = "Mari Natsuki";
     private Boolean isPurchased = false;
+    private String starring1 = "\\castImage\\RumiHiiragi.png";
+    private String starring2 = "\\castImage\\MiyuIrino.png";
+    private String starring3 = "\\castImage\\MariNatsuki.png";
 
     public void setIsPurchased(boolean isPurchased) {
         this.isPurchased = isPurchased;
@@ -93,6 +96,18 @@ public class M_10 implements movie{
     @Override
     public ImageView getPosterImage() {
         return new ImageView(imagePoster);
+    }
+     @Override
+    public ImageView getStarring1(){
+        return new ImageView(starring1);
+    }
+    @Override
+    public ImageView getStarring2(){
+        return new ImageView(starring2);
+    }
+    @Override
+    public ImageView getStarring3(){
+        return new ImageView(starring3);
     }
 
 }
