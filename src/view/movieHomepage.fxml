@@ -97,9 +97,9 @@
                   <Image url="@../vectorImages/Main%20scroll.png" />
                </image>
             </ImageView>
-            <ImageView fitHeight="73.0" fitWidth="62.0" layoutX="1110.0" layoutY="-17.0" pickOnBounds="true" preserveRatio="true">
+            <ImageView fitHeight="96.0" fitWidth="93.0" layoutX="1078.0" layoutY="-20.0" pickOnBounds="true" preserveRatio="true">
                <image>
-                  <Image url="@../vectorImages/movieHubLogo.png" />
+                  <Image url="@../vectorImages/newlkogo.png" />
                </image>
             </ImageView>
          </children>

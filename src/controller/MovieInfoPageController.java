@@ -63,16 +63,6 @@ public class MovieInfoPageController {
 
     public void initialize() {
 
-         M_1 m1 = new M_1();
-        M_2 m2 = new M_2();
-        M_3 m3 = new M_3();
-        M_4 m4 = new M_4();
-        M_5 m5 = new M_5();
-        M_6 m6 = new M_6();
-        M_7 m7 = new M_7();
-        M_8 m8 = new M_8();
-        M_9 m9 = new M_9();
-        M_10 m10 = new M_10();
 
         moviePickedText.setText(choosenMovie);
         bigScreenMoviePic(choosenMovie);
@@ -95,14 +85,8 @@ public class MovieInfoPageController {
 
     }
 
-            static String[] movieNames = {"M_1", "M_2", "M_3", "M_4", "M_5", "M_6", "M_7", "M_8", "M_9", "M_10"};
-            static String[] starringActors = {"//src/castImage/BillSkarsgard.png","//src/castImage/ChrisPratt.png","//src/castImage/DanielPadilla.png","//src/castImage/DarrenEspanto.png"
-            ,"//src/castImage/DaveBautista.png","//src/castImage/DonnieYen.png","//src/castImage/EmilyMortimer.png","//src/castImage/EnriqueGil.png","//src/castImage/EvangelineLilly.png"
-            ,"//src/castImage/JonathanMajors.png","//src/castImage/KathrynBernardo.png","//src/castImage/KeanuReaves.png","//src/castImage/LizaSoberano.png","//src/castImage/MariNatsuki.png"
-            ,"//src/castImage/MichaelDouglas.png","//src/castImage/MikeBJordan.png","//src/castImage/MiyuIrino.png","//src/castImage/NikitaEfremov.png","//src/castImage/PaulRudd.png"
-            ,"//src/castImage/RumiHiiragi.png","//src/castImage/SamWorthington.png","//src/castImage/Sigourney Weaver.png","//src/castImage/SofyaLebedava.png","src/castImage/SylviaSanchez.png"
-            ,"//src/castImage/TakuyaKimura.png","//src/castImage/TaronEgorton.png","//src/castImage/TatsuyaGashuin.png","//src/castImage/TessaThompson.png","//src/castImage/ZoeZaldana.png"           
-        };
+    static String[] movieNames = {"M_1", "M_2", "M_3", "M_4", "M_5", "M_6", "M_7", "M_8", "M_9", "M_10"};
+            
 
     public void bigScreenMoviePic(String movie) { // "M_2"
         try {
