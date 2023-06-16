@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import javafx.scene.control.TextField?>
 <?import javafx.scene.image.Image?>
 <?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
@@ -99,15 +100,22 @@
             <Font name="Franklin Gothic Medium Cond" size="20.0" />
          </font>
       </Text>
-      <Text fill="WHITE" layoutX="834.0" layoutY="464.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Cancel">
+      <Text fill="WHITE" layoutX="878.0" layoutY="465.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Cancel">
          <font>
             <Font name="Franklin Gothic Medium Cond" size="20.0" />
          </font>
       </Text>
-      <Text layoutX="976.0" layoutY="464.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Save">
+      <Text layoutX="1020.0" layoutY="465.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Save">
          <font>
             <Font name="Franklin Gothic Medium Cond" size="20.0" />
          </font>
       </Text>
+      <TextField layoutX="159.0" layoutY="246.0" prefHeight="25.0" prefWidth="281.0" promptText="First Name" style="-fx-background-color: #444444;" />
+      <TextField layoutX="531.0" layoutY="246.0" prefHeight="25.0" prefWidth="281.0" promptText="Last Name" style="-fx-background-color: #444444;" />
+      <TextField layoutX="159.0" layoutY="337.0" prefHeight="25.0" prefWidth="654.0" promptText="FirstName@gmail.com" style="-fx-background-color: #444444;" />
+      <TextField layoutX="159.0" layoutY="433.0" prefHeight="25.0" prefWidth="654.0" promptText="# 36 Ares Street, Herodicy city, Glatinum, Mars" style="-fx-background-color: #444444;" />
+      <TextField layoutX="159.0" layoutY="524.0" prefHeight="25.0" prefWidth="654.0" promptText="09-xxxx-xxxxx" style="-fx-background-color: #444444;" />
+      <TextField layoutX="159.0" layoutY="617.0" prefHeight="25.0" prefWidth="281.0" promptText="Herodicy city" style="-fx-background-color: #444444;" />
+      <TextField layoutX="531.0" layoutY="617.0" prefHeight="25.0" prefWidth="281.0" promptText="Glatinum" style="-fx-background-color: #444444;" />
    </children>
 </AnchorPane>
