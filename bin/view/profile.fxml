@@ -105,6 +105,11 @@
             <Font name="Franklin Gothic Medium Cond" size="20.0" />
          </font>
       </Text>
+      <ImageView fitHeight="29.0" fitWidth="109.0" layoutX="991.0" layoutY="444.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../vectorImages/Save%20icon.png" />
+         </image>
+      </ImageView>
       <Text layoutX="1020.0" layoutY="465.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Save">
          <font>
             <Font name="Franklin Gothic Medium Cond" size="20.0" />
@@ -117,5 +122,15 @@
       <TextField layoutX="159.0" layoutY="524.0" prefHeight="25.0" prefWidth="654.0" promptText="09-xxxx-xxxxx" style="-fx-background-color: #444444;" />
       <TextField layoutX="159.0" layoutY="617.0" prefHeight="25.0" prefWidth="281.0" promptText="Herodicy city" style="-fx-background-color: #444444;" />
       <TextField layoutX="531.0" layoutY="617.0" prefHeight="25.0" prefWidth="281.0" promptText="Glatinum" style="-fx-background-color: #444444;" />
+      <ImageView fitHeight="119.0" fitWidth="115.0" layoutX="915.0" layoutY="305.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../vectorImages/Exclamation%20Sign%20icon.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="29.0" fitWidth="115.0" layoutX="857.0" layoutY="444.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../vectorImages/Cancel%20icon.png" />
+         </image>
+      </ImageView>
    </children>
 </AnchorPane>
