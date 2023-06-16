@@ -42,14 +42,10 @@ public class MovieInfoPageController {
     Text actorName1, actorName2, actorName3;
 
     @FXML
-    MediaView movieTrailer;
+    Text creatorDescripText, descripText;
 
-    private File file;
-
-    private Media media;
-
-    private MediaPlayer mediaPlayer;
-
+    @FXML
+    MediaView mediaView;
 
 
     static private String choosenMovie; // nakastored na agad; M_2
@@ -63,9 +59,9 @@ public class MovieInfoPageController {
 
     public void initialize() {
 
-
-        moviePickedText.setText(choosenMovie);
         bigScreenMoviePic(choosenMovie);
+        changeCreator();
+        changeDescrip();
 
         backButton.setOnMouseClicked(event -> backButtonClicked());
 
@@ -123,27 +119,31 @@ public class MovieInfoPageController {
           e.printStackTrace(); 
         }
          }
+    private File file;
 
-        private void switch2movielist() throws IOException {
-            
-        //  mediaPlayer.stop();
-         Stage stage = (Stage) backButton.getScene().getWindow();
-            Scene scene1 = stage.getScene();
-            FXMLLoader loader = new FXMLLoader(getClass().getResource("/view/movieMovieList.fxml"));
-            Parent root2 = loader.load();
-                Scene scene2 = new Scene(root2, scene1.getWidth(), scene1.getHeight());
+    private Media media;
 
-             stage.setScene(scene2); // Set the new scene in the stage
-        }
+    private MediaPlayer mediaPlayer;
 
-            private void switch2Homepage() throws IOException {
+    private void switch2movielist() throws IOException {
+        mediaPlayer.stop();
+        Stage stage = (Stage) backButton.getScene().getWindow();
+        Scene scene1 = stage.getScene();
+        FXMLLoader loader = new FXMLLoader(getClass().getResource("/view/movieMovieList.fxml"));
+        Parent root2 = loader.load();
+        Scene scene2 = new Scene(root2, scene1.getWidth(), scene1.getHeight());
+        stage.setScene(scene2); // Set the new scene in the stage
+    }
+
+    private void switch2Homepage() throws IOException {
         // Stop the media player if necessary
-             Parent root = FXMLLoader.load(getClass().getResource("/view/movieHomepage.fxml"));
-             Stage stage = (Stage) backButton.getScene().getWindow();
-            Scene scene = new Scene(root);
-             stage.setScene(scene);
-            stage.show();
-}
+        mediaPlayer.stop();
+        Parent root = FXMLLoader.load(getClass().getResource("/view/movieHomepage.fxml"));
+        Stage stage = (Stage) backButton.getScene().getWindow();
+        Scene scene = new Scene(root);
+        stage.setScene(scene);
+        stage.show();
+    }
 
 
 
@@ -335,7 +335,7 @@ public class MovieInfoPageController {
 
            
 
-         public void videoTrailer() {
+    public void videoTrailer() {
          try {
             String className = "model." + choosenMovie;
             Class<?> clazz = Class.forName(className);
@@ -343,35 +343,20 @@ public class MovieInfoPageController {
 
             if (instance instanceof movie) {
                 movie movieInstance = (movie) instance;
-            String videoPath = movieInstance.getTrailer();
-
-            Media media = new Media(new File(videoPath).toURI().toString());
-
-            MediaPlayer mediaPlayer = new MediaPlayer(media);
-
-            movieTrailer.setMediaPlayer(mediaPlayer);
-
-            movieTrailer.setFitWidth(700); // Set the desired width
-            movieTrailer.setFitHeight(360);
-            // Set the desired height
-            // Add the mediaView to your layout
-
-            // Play the video
-            mediaPlayer.setAutoPlay(true);
-
+                String movieTrailer = movieInstance.getTrailer();
+                file = new File(movieTrailer);
+                media = new Media(file.toURI().toString());
+                mediaPlayer = new MediaPlayer(media);
+                mediaView.setMediaPlayer(mediaPlayer);
+                mediaView.setFitHeight(360);
+                mediaView.setFitWidth(500);
+                mediaPlayer.setAutoPlay(true);
+                
             }
             } catch (Exception e) {
                 e.printStackTrace();
         }
     }
-
-    
-
-
-        
-
-       
-
 
     private void fadeImageViewBig(ImageView imageView, ImageView newImage) {
         FadeTransition fadeOutTransition = new FadeTransition(Duration.millis(500), imageView);
@@ -388,14 +373,37 @@ public class MovieInfoPageController {
     
         fadeOutTransition.play();
 
+    }
 
-        
+    public void changeCreator() {
+        try {
+            String movieNames = "model." + choosenMovie;
+            Class<?> clazz = Class.forName(movieNames);
+            Object instance = clazz.getDeclaredConstructor().newInstance();
 
+            if (instance instanceof movie) {
+                movie movieInstance = (movie) instance;
+                String movieName = movieInstance.getCreatorDescription();
+                creatorDescripText.setText(movieName); // Set the movie name in the label
+            }
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+    }
 
+    public void changeDescrip() {
+        try {
+            String movieNames = "model." + choosenMovie;
+            Class<?> clazz = Class.forName(movieNames);
+            Object instance = clazz.getDeclaredConstructor().newInstance();
 
-
-
-
-
+            if (instance instanceof movie) {
+                movie movieInstance = (movie) instance;
+                String movieDescription = movieInstance.getDescription();
+                descripText.setText(movieDescription); // Set the movie name in the label
+            }
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
     }
 }
