@@ -1,6 +1,8 @@
 package controller;
 
 import java.io.IOException;
+import java.net.URL;
+import java.util.ResourceBundle;
 
 import javafx.animation.FadeTransition;
 import javafx.animation.KeyFrame;
@@ -93,6 +95,14 @@ public class HomepageController {
         optionPane.getChildren().get(0).setOnMouseClicked(event -> {
             try {
                 switchToWallet(event);
+            } catch (IOException e) {
+                // TODO Auto-generated catch block
+                e.printStackTrace();
+            }
+        });
+        optionPane.getChildren().get(1).setOnMouseClicked(event -> {
+            try {
+                switchToProfile(event);
             } catch (IOException e) {
                 // TODO Auto-generated catch block
                 e.printStackTrace();
@@ -697,6 +707,14 @@ public class HomepageController {
 
     public void switchToWallet(MouseEvent event) throws IOException {
         Parent root = FXMLLoader.load(getClass().getResource("/view/walletProfile.fxml"));
+        Stage stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
+        Scene scene = new Scene(root);
+        stage.setScene(scene);
+        stage.show();
+    }
+
+    public void switchToProfile(MouseEvent event) throws IOException {
+        Parent root = FXMLLoader.load(getClass().getResource("/view/profile.fxml"));
         Stage stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
         Scene scene = new Scene(root);
         stage.setScene(scene);

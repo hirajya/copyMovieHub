@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="724.0" prefWidth="1140.0" style="-fx-background-color: #333333;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.profileController">
+   <children>
+      <Pane fx:id="optionPane" prefHeight="724.0" prefWidth="115.0" style="-fx-background-color: #111111;">
+         <children>
+            <ImageView fitHeight="25.0" fitWidth="26.0" layoutX="45.0" layoutY="27.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../vectorImages/Home%20icon.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="45.0" fitWidth="135.0" layoutX="-36.0" layoutY="114.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../vectorImages/current%20balance%20bg.png" />
+               </image>
+            </ImageView>
+            <Text fill="WHITE" layoutX="31.0" layoutY="144.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Profile">
+               <font>
+                  <Font name="Franklin Gothic Medium Cond" size="22.0" />
+               </font>
+            </Text>
+            <Text fill="WHITE" layoutX="31.0" layoutY="195.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Wallet">
+               <font>
+                  <Font name="Franklin Gothic Medium Cond" size="22.0" />
+               </font>
+            </Text>
+            <ImageView fitHeight="47.0" fitWidth="31.0" layoutX="41.0" layoutY="571.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../vectorImages/Settings%20icon.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="85.0" fitWidth="72.0" layoutX="20.0" layoutY="620.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../vectorImages/PFP%20frnaco%20icon.png" />
+               </image>
+            </ImageView>
+         </children>
+      </Pane>
+      <ImageView fitHeight="98.0" fitWidth="98.0" layoutX="159.0" layoutY="55.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../vectorImages/PFP%20frnaco%20icon.png" />
+         </image>
+      </ImageView>
+      <Text fill="WHITE" layoutX="285.0" layoutY="94.0" strokeType="OUTSIDE" strokeWidth="0.0" text="NAME">
+         <font>
+            <Font name="Franklin Gothic Medium Cond" size="26.0" />
+         </font>
+      </Text>
+      <Text fill="WHITE" layoutX="285.0" layoutY="119.0" opacity="0.3" strokeType="OUTSIDE" strokeWidth="0.0" text="bday" wrappingWidth="58.017578125">
+         <font>
+            <Font name="Franklin Gothic Medium Cond" size="20.0" />
+         </font>
+      </Text>
+      <Text fill="WHITE" layoutX="343.0" layoutY="119.0" opacity="0.3" strokeType="OUTSIDE" strokeWidth="0.0" text="date joined" wrappingWidth="115.0">
+         <font>
+            <Font name="Franklin Gothic Medium Cond" size="20.0" />
+         </font>
+      </Text>
+      <Text fill="WHITE" layoutX="159.0" layoutY="228.0" strokeType="OUTSIDE" strokeWidth="0.0" text="First Name">
+         <font>
+            <Font name="Franklin Gothic Medium Cond" size="20.0" />
+         </font>
+      </Text>
+      <Text fill="WHITE" layoutX="531.0" layoutY="227.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Last Name">
+         <font>
+            <Font name="Franklin Gothic Medium Cond" size="20.0" />
+         </font>
+      </Text>
+      <Text fill="WHITE" layoutX="159.0" layoutY="322.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Email">
+         <font>
+            <Font name="Franklin Gothic Medium Cond" size="20.0" />
+         </font>
+      </Text>
+      <Text fill="WHITE" layoutX="159.0" layoutY="416.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Address">
+         <font>
+            <Font name="Franklin Gothic Medium Cond" size="20.0" />
+         </font>
+      </Text>
+      <Text fill="WHITE" layoutX="159.0" layoutY="510.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Contact Number">
+         <font>
+            <Font name="Franklin Gothic Medium Cond" size="20.0" />
+         </font>
+      </Text>
+      <Text fill="WHITE" layoutX="159.0" layoutY="604.0" strokeType="OUTSIDE" strokeWidth="0.0" text="City">
+         <font>
+            <Font name="Franklin Gothic Medium Cond" size="20.0" />
+         </font>
+      </Text>
+      <Text fill="WHITE" layoutX="531.0" layoutY="604.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Country">
+         <font>
+            <Font name="Franklin Gothic Medium Cond" size="20.0" />
+         </font>
+      </Text>
+      <Text fill="WHITE" layoutX="834.0" layoutY="464.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Cancel">
+         <font>
+            <Font name="Franklin Gothic Medium Cond" size="20.0" />
+         </font>
+      </Text>
+      <Text layoutX="976.0" layoutY="464.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Save">
+         <font>
+            <Font name="Franklin Gothic Medium Cond" size="20.0" />
+         </font>
+      </Text>
+   </children>
+</AnchorPane>

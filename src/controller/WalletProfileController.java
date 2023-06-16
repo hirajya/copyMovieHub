@@ -45,6 +45,14 @@ public class WalletProfileController {
                 e.printStackTrace();
             }
         });
+        optionPane.getChildren().get(2).setOnMouseClicked(event -> {
+            try {
+                switchToProfile(event);
+            } catch (IOException e) {
+                // TODO Auto-generated catch block
+                e.printStackTrace();
+            }
+        });
         ScrollPane scrollPane = new ScrollPane();
         scrollPane.setContent(purchasesBox);
         scrollPane.setFitToWidth(true);
@@ -96,5 +104,13 @@ public class WalletProfileController {
         String formattedDateTime = currentDateTime.format(formatter);
 
         return formattedDateTime;
+    }
+
+    public void switchToProfile(MouseEvent event) throws IOException {
+        Parent root = FXMLLoader.load(getClass().getResource("/view/profile.fxml"));
+        Stage stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
+        Scene scene = new Scene(root);
+        stage.setScene(scene);
+        stage.show();
     }
 }
