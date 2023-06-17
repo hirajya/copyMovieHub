@@ -30,7 +30,7 @@ public class MovieInfoPageController {
     ImageView bigScreenMovie;
 
     @FXML
-    ImageView backButtonClicked;
+    ImageView backButtonClicked, buyButton;
 
     @FXML
     Text movieNameText, movieReleaseDate, firstGenre, secondGenre, thirdGenre;
@@ -46,6 +46,9 @@ public class MovieInfoPageController {
 
     @FXML
     MediaView mediaView;
+
+    @FXML
+    Text buyText;
 
 
     static private String choosenMovie; // nakastored na agad; M_2
@@ -64,7 +67,7 @@ public class MovieInfoPageController {
         changeDescrip();
 
         backButton.setOnMouseClicked(event -> backButtonClicked());
-
+        ifBoughtAlready();
         changeTitle(choosenMovie);
         yearMade(choosenMovie); 
         genreUno(choosenMovie);
@@ -405,5 +408,39 @@ public class MovieInfoPageController {
         } catch (Exception e) {
             e.printStackTrace();
         }
+    }
+
+    public void ifBoughtAlready() {
+        String input = choosenMovie;
+        int result = Integer.parseInt(extractNumbersAfterUnderscore(input));
+        if (MoviePaymentController.movieBought[result-1] == true) {
+            buyText.setText("Purchased");
+            buyText.setDisable(true);
+            buyButton.setDisable(true);
+            // play button fade will do & not disable method
+        } else {
+            buyText.setText("Buy");
+            buyText.setDisable(false);
+            buyButton.setDisable(false);
+        }
+    }
+
+    public static String extractNumbersAfterUnderscore(String input) {
+        int lastIndex = input.lastIndexOf('_');
+        if (lastIndex != -1 && lastIndex < input.length() - 1) {
+            return input.substring(lastIndex + 1);
+        } else {
+            // Return an empty string or throw an exception if no numbers found after underscore.
+            return "";
+        }
+    }
+
+     public void switchToPayment(MouseEvent event) throws IOException {
+        MoviePaymentController.setMovieChoosen(choosenMovie);
+        Parent root = FXMLLoader.load(getClass().getResource("/view/moviePayment.fxml"));
+        Stage stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
+        Scene scene = new Scene(root);
+        stage.setScene(scene);
+        stage.show();
     }
 }

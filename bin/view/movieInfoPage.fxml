@@ -16,7 +16,7 @@
             <Image url="@../vectorImages/back%20icon.png" />
          </image>
       </ImageView>
-      <Pane layoutX="721.0" layoutY="-10.0" opacity="0.32" prefHeight="740.0" prefWidth="1076.0" style="-fx-background-color: #000000;" />
+      <Pane layoutX="721.0" layoutY="-10.0" opacity="0.32" prefHeight="740.0" prefWidth="437.0" style="-fx-background-color: #000000;" />
       <ImageView fitHeight="25.0" fitWidth="29.0" layoutX="963.0" layoutY="34.0" pickOnBounds="true" preserveRatio="true">
          <image>
             <Image url="@../vectorImages/Search%20icon.png" />
@@ -38,7 +38,7 @@
             <Font name="Franklin Gothic Demi Cond" size="64.0" />
          </font>
       </Text>
-      <Text fill="WHITE" layoutX="42.0" layoutY="507.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Starring">
+      <Text fill="WHITE" layoutX="70.0" layoutY="506.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Starring">
          <font>
             <Font name="Franklin Gothic Demi Cond" size="24.0" />
          </font>
@@ -88,20 +88,20 @@
             <Font name="Franklin Gothic Demi Cond" size="16.0" />
          </font>
       </Text>
-      <ImageView fx:id="starringActorUno" fitHeight="138.0" fitWidth="132.0" layoutX="23.0" layoutY="527.0" pickOnBounds="true" preserveRatio="true" />
-      <ImageView fx:id="starringActorSecond" fitHeight="138.0" fitWidth="132.0" layoutX="197.0" layoutY="527.0" pickOnBounds="true" preserveRatio="true" />
-      <ImageView fx:id="starringActorThird" fitHeight="138.0" fitWidth="132.0" layoutX="381.0" layoutY="527.0" pickOnBounds="true" preserveRatio="true" />
-      <Text fx:id="actorName1" fill="WHITE" layoutX="49.0" layoutY="690.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Text">
+      <ImageView fx:id="starringActorUno" fitHeight="138.0" fitWidth="132.0" layoutX="58.0" layoutY="527.0" pickOnBounds="true" preserveRatio="true" />
+      <ImageView fx:id="starringActorSecond" fitHeight="138.0" fitWidth="132.0" layoutX="232.0" layoutY="527.0" pickOnBounds="true" preserveRatio="true" />
+      <ImageView fx:id="starringActorThird" fitHeight="138.0" fitWidth="132.0" layoutX="416.0" layoutY="527.0" pickOnBounds="true" preserveRatio="true" />
+      <Text fx:id="actorName1" fill="WHITE" layoutX="84.0" layoutY="690.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Text">
          <font>
             <Font name="Franklin Gothic Demi Cond" size="16.0" />
          </font>
       </Text>
-      <Text fx:id="actorName2" fill="WHITE" layoutX="223.0" layoutY="690.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Text">
+      <Text fx:id="actorName2" fill="WHITE" layoutX="258.0" layoutY="690.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Text">
          <font>
             <Font name="Franklin Gothic Demi Cond" size="16.0" />
          </font>
       </Text>
-      <Text fx:id="actorName3" fill="WHITE" layoutX="412.0" layoutY="690.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Text">
+      <Text fx:id="actorName3" fill="WHITE" layoutX="447.0" layoutY="690.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Text">
          <font>
             <Font name="Franklin Gothic Demi Cond" size="16.0" />
          </font>
@@ -111,9 +111,19 @@
             <Font size="16.0" />
          </font>
       </Text>
-      <Text fx:id="descripText" fill="WHITE" layoutX="760.0" layoutY="436.0" strokeType="OUTSIDE" strokeWidth="0.0" text="textInfo" textAlignment="JUSTIFY" wrappingWidth="325.0">
+      <Text fx:id="descripText" fill="WHITE" layoutX="760.0" layoutY="420.0" strokeType="OUTSIDE" strokeWidth="0.0" text="textInfo" textAlignment="JUSTIFY" wrappingWidth="325.0">
          <font>
             <Font name="Gill Sans MT" size="14.0" />
+         </font>
+      </Text>
+      <ImageView fx:id="buyButton" fitHeight="40.0" fitWidth="178.0" layoutX="747.0" layoutY="635.0" onMouseClicked="#switchToPayment" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../vectorImages/cash%20in%20icon.png" />
+         </image>
+      </ImageView>
+      <Text fx:id="buyText" fill="WHITE" layoutX="769.0" layoutY="660.0" onMouseClicked="#switchToPayment" strokeType="OUTSIDE" strokeWidth="0.0" text="Buy">
+         <font>
+            <Font name="Franklin Gothic Medium Cond" size="24.0" />
          </font>
       </Text>
    </children>
