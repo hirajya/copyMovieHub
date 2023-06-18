@@ -5,6 +5,9 @@ package controller;
 import java.io.File;
 import java.io.IOException;
 import javafx.animation.FadeTransition;
+import javafx.animation.KeyFrame;
+import javafx.animation.KeyValue;
+import javafx.animation.Timeline;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Node;
@@ -50,6 +53,9 @@ public class MovieInfoPageController {
     @FXML
     Text buyText;
 
+    @FXML
+    ImageView titleBlack1, starringBlack1, starringBlack2;
+
 
     static private String choosenMovie; // nakastored na agad; M_2
 
@@ -83,8 +89,9 @@ public class MovieInfoPageController {
         videoTrailer();
         System.out.println(fromHomePage);
         playWhiteButton.setOpacity(0.6);
-
-
+        starringBlack1.setOpacity(0.0);
+        starringBlack2.setOpacity(0.0);
+        titleBlack1.setOpacity(0.0);
     }
 
     static String[] movieNames = {"M_1", "M_2", "M_3", "M_4", "M_5", "M_6", "M_7", "M_8", "M_9", "M_10"};
@@ -468,5 +475,50 @@ public class MovieInfoPageController {
         stage.setScene(scene);
         stage.show();
     }
+
+    private void fadeOpacity(Node node, double targetOpacity, Duration duration) {
+        double initialOpacity = node.getOpacity();
+
+        KeyValue keyValue = new KeyValue(node.opacityProperty(), targetOpacity);
+        KeyFrame keyFrame = new KeyFrame(duration, keyValue);
+
+        Timeline timeline = new Timeline(keyFrame);
+        timeline.setOnFinished(event -> node.setOpacity(targetOpacity));
+        timeline.play();
+    }
+
+    public void fadeOpacityToLowStarring() {
+        double targetOpacity = 0.0;
+        Duration duration = Duration.seconds(0.8); 
+
+        fadeOpacity(starringBlack1, targetOpacity, duration);
+        fadeOpacity(starringBlack2, targetOpacity, duration);
+    }
+
+    public void fadeOpacityToHighStarring() {
+        double targetOpacity = 0.7;
+        Duration duration = Duration.seconds(0.8); 
+
+        fadeOpacity(starringBlack1, targetOpacity, duration);
+        fadeOpacity(starringBlack2, targetOpacity, duration);
+
+    }
+
+    public void fadeOpacityToLowTitle() {
+        double targetOpacity = 0.0;
+        Duration duration = Duration.seconds(0.8); 
+
+        fadeOpacity(titleBlack1, targetOpacity, duration);
+    }
+
+    public void fadeOpacityToHighTitle() {
+        double targetOpacity = 0.7;
+        Duration duration = Duration.seconds(0.8); 
+
+        fadeOpacity(titleBlack1, targetOpacity, duration);
+    }
+
+
+
 
 }
