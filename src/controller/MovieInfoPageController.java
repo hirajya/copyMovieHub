@@ -30,7 +30,7 @@ public class MovieInfoPageController {
     ImageView bigScreenMovie;
 
     @FXML
-    ImageView backButtonClicked, buyButton;
+    ImageView backButtonClicked, buyButton, playWhiteButton, playGreenButton;
 
     @FXML
     Text movieNameText, movieReleaseDate, firstGenre, secondGenre, thirdGenre;
@@ -65,6 +65,7 @@ public class MovieInfoPageController {
         bigScreenMoviePic(choosenMovie);
         changeCreator();
         changeDescrip();
+        playGreenButton.setVisible(false);
 
         backButton.setOnMouseClicked(event -> backButtonClicked());
         ifBoughtAlready();
@@ -81,6 +82,8 @@ public class MovieInfoPageController {
         starringActor3(choosenMovie);
         videoTrailer();
         System.out.println(fromHomePage);
+        playWhiteButton.setOpacity(0.6);
+
 
     }
 
@@ -417,11 +420,15 @@ public class MovieInfoPageController {
             buyText.setText("Purchased");
             buyText.setDisable(true);
             buyButton.setDisable(true);
+            playWhiteButton.setDisable(false);
+            playGreenButton.setDisable(false);
             // play button fade will do & not disable method
         } else {
             buyText.setText("Buy");
             buyText.setDisable(false);
             buyButton.setDisable(false);
+            playWhiteButton.setDisable(true);
+            playGreenButton.setDisable(true);
         }
     }
 
@@ -439,8 +446,19 @@ public class MovieInfoPageController {
         MoviePaymentController.setMovieChoosen(choosenMovie);
         Parent root = FXMLLoader.load(getClass().getResource("/view/moviePayment.fxml"));
         Stage stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
-        Scene scene = new Scene(root);
+        Scene scene = new Scene(root);  
         stage.setScene(scene);
         stage.show();
     }
+
+    public void showInWhite() {
+        playWhiteButton.setOpacity(1);
+        playGreenButton.setVisible(true);
+    }
+
+    public void showOutWhite() {
+        playWhiteButton.setOpacity(0.6);
+        playGreenButton.setVisible(false);
+    }
+
 }
