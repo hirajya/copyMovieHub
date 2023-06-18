@@ -126,12 +126,12 @@
             <Font name="Franklin Gothic Medium Cond" size="24.0" />
          </font>
       </Text>
-      <ImageView fx:id="playGreenButton" fitHeight="73.0" fitWidth="74.0" layoutX="977.0" layoutY="604.0" pickOnBounds="true" preserveRatio="true">
+      <ImageView fx:id="playGreenButton" fitHeight="73.0" fitWidth="74.0" layoutX="977.0" layoutY="604.0" onMouseClicked="#switchToMoviePlay" pickOnBounds="true" preserveRatio="true">
          <image>
             <Image url="@../vectorImages/play%20Button%20green.png" />
          </image>
       </ImageView>
-      <ImageView fx:id="playWhiteButton" fitHeight="62.0" fitWidth="62.0" layoutX="983.0" layoutY="609.0" onMouseEntered="#showInWhite" onMouseExited="#showOutWhite" pickOnBounds="true" preserveRatio="true">
+      <ImageView fx:id="playWhiteButton" fitHeight="62.0" fitWidth="62.0" layoutX="983.0" layoutY="609.0" onMouseClicked="#switchToMoviePlay" onMouseEntered="#showInWhite" onMouseExited="#showOutWhite" pickOnBounds="true" preserveRatio="true">
          <image>
             <Image url="@../vectorImages/play%20Button%20white.png" />
          </image>

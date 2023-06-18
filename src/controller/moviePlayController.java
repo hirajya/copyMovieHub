@@ -36,7 +36,7 @@ public class moviePlayController implements Initializable{
         mediaView.setMediaPlayer(mediaPlayer);
         mediaView.setFitHeight(580);
         mediaView.setFitWidth(1160);
-        mediaPlayer.setAutoPlay(false);
+        mediaPlayer.setAutoPlay(true);
     }
 
     public void pauseVideo() {
