@@ -1,11 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.media.MediaView?>
-
 
 <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="724.0" prefWidth="1140.0" style="-fx-background-color: #000000;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.moviePlayController">
    <children>
       <MediaView fx:id="mediaView" fitHeight="200.0" fitWidth="200.0" layoutX="55.0" layoutY="33.0" />
+      <ImageView fx:id="backButton" fitHeight="26.0" fitWidth="43.0" layoutX="14.0" layoutY="14.0" onMouseClicked="#switchToHomepage" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../vectorImages/back%20icon.png" />
+         </image>
+      </ImageView>
    </children>
 </AnchorPane>
