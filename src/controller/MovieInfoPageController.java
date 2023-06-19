@@ -450,6 +450,7 @@ public class MovieInfoPageController {
     }
 
      public void switchToPayment(MouseEvent event) throws IOException {
+        mediaPlayer.stop();
         MoviePaymentController.setMovieChoosen(choosenMovie);
         Parent root = FXMLLoader.load(getClass().getResource("/view/moviePayment.fxml"));
         Stage stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
@@ -469,6 +470,8 @@ public class MovieInfoPageController {
     }
 
     public void switchToMoviePlay(MouseEvent event) throws IOException {
+        mediaPlayer.stop();
+        moviePlayController.movieChoosen = choosenMovie;
         Parent root = FXMLLoader.load(getClass().getResource("/view/moviePlay.fxml"));
         Stage stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
         Scene scene = new Scene(root);  
