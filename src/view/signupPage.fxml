@@ -14,7 +14,7 @@
             <Image url="@../vectorImages/miles%20bg.png" />
          </image>
       </ImageView>
-      <ImageView blendMode="MULTIPLY" cache="true" fitHeight="726.0" fitWidth="397.0" layoutX="703.0" layoutY="-1.0" pickOnBounds="true" preserveRatio="true" style="-fx-opacity: 55;">
+      <ImageView fx:id="imageBlack" blendMode="MULTIPLY" cache="true" fitHeight="726.0" fitWidth="397.0" layoutX="701.0" layoutY="-726.0" pickOnBounds="true" preserveRatio="true" style="-fx-opacity: 55;">
          <image>
             <Image url="@../vectorImages/Sign%20up%20bg.png" />
          </image>

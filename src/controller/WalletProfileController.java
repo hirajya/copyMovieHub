@@ -113,4 +113,6 @@ public class WalletProfileController {
         stage.setScene(scene);
         stage.show();
     }
+
+    
 }

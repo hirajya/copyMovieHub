@@ -222,8 +222,8 @@ public class moviePlayController implements Initializable{
         Duration duration = Duration.millis(500);
         TranslateTransition translateTransition = new TranslateTransition(duration, imageView);
         translateTransition.setByX(-distance); // Move to the left by the specified distance
-        translateTransition.setAutoReverse(false);
-        translateTransition.setCycleCount(1);
+        // translateTransition.setAutoReverse(false);
+        // translateTransition.setCycleCount(1);
         // Start the animation
         translateTransition.play();
     }
@@ -233,8 +233,8 @@ public class moviePlayController implements Initializable{
         Duration duration = Duration.millis(500);
         TranslateTransition translateTransition = new TranslateTransition(duration, pane);
         translateTransition.setByX(distance); // Move to the right by the specified distance
-        translateTransition.setAutoReverse(false);
-        translateTransition.setCycleCount(1);
+        // translateTransition.setAutoReverse(false);
+        // translateTransition.setCycleCount(1);
 
         // Start the animation
         translateTransition.play();

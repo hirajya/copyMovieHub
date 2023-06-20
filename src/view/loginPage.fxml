@@ -8,24 +8,24 @@
 <?import javafx.scene.text.Font?>
 <?import javafx.scene.text.Text?>
 
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="724.0" prefWidth="1140.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.LoginController">
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="724.0" prefWidth="1140.0" style="-fx-background-color: #111111;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.LoginController">
    <children>
-      <ImageView fitHeight="777.0" fitWidth="1364.0" layoutX="768.0" layoutY="-33.0" pickOnBounds="true" preserveRatio="true">
-         <image>
-            <Image url="@../vectorImages/fastnfurious%20bg.png" />
-         </image>
-      </ImageView>
-      <ImageView fitHeight="730.0" fitWidth="1297.0" layoutX="324.0" layoutY="-4.0" pickOnBounds="true" preserveRatio="true">
+      <ImageView fx:id="pic1" fitHeight="730.0" fitWidth="1297.0" layoutX="313.0" layoutY="726.0" pickOnBounds="true" preserveRatio="true">
          <image>
             <Image url="@../vectorImages/ironman%20bg.png" />
          </image>
       </ImageView>
-      <ImageView fitHeight="730.0" fitWidth="1016.0" layoutY="-3.0" pickOnBounds="true" preserveRatio="true">
+      <ImageView fx:id="pic3" fitHeight="777.0" fitWidth="1364.0" layoutX="733.0" layoutY="-777.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../vectorImages/fastnfurious%20bg.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="pic2" fitHeight="730.0" fitWidth="1016.0" layoutY="-730.0" pickOnBounds="true" preserveRatio="true">
          <image>
             <Image url="@../vectorImages/batman%20bg.png" />
          </image>
       </ImageView>
-      <ImageView fitHeight="745.0" fitWidth="1297.0" layoutX="-78.0" layoutY="-17.0" pickOnBounds="true" preserveRatio="true">
+      <ImageView fitHeight="557.0" fitWidth="905.0" layoutX="143.0" layoutY="74.0" pickOnBounds="true" preserveRatio="true">
          <image>
             <Image url="@../vectorImages/filter%20bg.png" />
          </image>
