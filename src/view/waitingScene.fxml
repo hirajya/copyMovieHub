@@ -1,6 +1,105 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
 
-
-<AnchorPane fx:id="waitingPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="724.0" prefWidth="1140.0" style="-fx-background-color: #111;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.waitingSceneController" />
+<AnchorPane fx:id="waitingPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="724.0" prefWidth="1140.0" style="-fx-background-color: #111;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.waitingSceneController">
+   <children>
+      <ImageView fx:id="pic4" fitHeight="150.0" fitWidth="200.0" layoutX="974.0" layoutY="-98.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../movieImages/m_4Poster.jpg" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="pic3" fitHeight="150.0" fitWidth="200.0" layoutX="975.0" layoutY="72.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../movieImages/m_2Poster.jpg" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="pic2" fitHeight="150.0" fitWidth="200.0" layoutX="975.0" layoutY="239.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../movieImages/m_3Poster.jpg" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="pic1" fitHeight="150.0" fitWidth="200.0" layoutX="976.0" layoutY="407.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../movieImages/m_10Poster.jpg" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="pic7" fitHeight="150.0" fitWidth="200.0" layoutX="856.0" layoutY="-37.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../movieImages/m_6Poster.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="pic6" fitHeight="150.0" fitWidth="200.0" layoutX="855.0" layoutY="133.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../movieImages/m_5Poster.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="pic5" fitHeight="150.0" fitWidth="200.0" layoutX="855.0" layoutY="300.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../movieImages/m_9Poster.jpg" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="pic8" fitHeight="150.0" fitWidth="200.0" layoutX="727.0" layoutY="208.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../movieImages/m_8Poster.jpg" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="pic9" fitHeight="150.0" fitWidth="200.0" layoutX="727.0" layoutY="38.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../movieImages/m_7Poster.jpg" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="pic10" fitHeight="150.0" fitWidth="200.0" layoutX="726.0" layoutY="-130.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../movieImages/m_1Poster.jpg" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="pic11" fitHeight="150.0" fitWidth="200.0" layoutX="603.0" layoutY="133.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../movieImages/m_2Poster.jpg" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="pic12" fitHeight="150.0" fitWidth="200.0" layoutX="604.0" layoutY="-37.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../movieImages/m_3Poster.jpg" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="pic13" fitHeight="150.0" fitWidth="200.0" layoutX="602.0" layoutY="-205.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../movieImages/m_9Poster.jpg" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="pic14" fitHeight="150.0" fitWidth="200.0" layoutX="856.0" layoutY="-205.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../movieImages/m_10Poster.jpg" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="500.0" fitWidth="685.0" layoutX="70.0" layoutY="64.0" opacity="0.2" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../vectorImages/newlkogo.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="logo1" fitHeight="500.0" fitWidth="685.0" layoutX="70.0" layoutY="600.0" opacity="0.4" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../vectorImages/newlkogo.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="logo2" fitHeight="500.0" fitWidth="685.0" layoutX="1100.0" layoutY="64.0" opacity="0.6" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../vectorImages/newlkogo.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="logo3" fitHeight="500.0" fitWidth="685.0" layoutX="70.0" layoutY="-500.0" opacity="0.8" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../vectorImages/newlkogo.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="logo4" fitHeight="500.0" fitWidth="685.0" layoutX="-581.0" layoutY="64.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../vectorImages/newlkogo.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>
