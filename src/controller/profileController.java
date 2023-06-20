@@ -54,4 +54,12 @@ public class profileController {
         stage.show();
     }
 
+    public void signout(MouseEvent event) throws IOException {
+        Parent root = FXMLLoader.load(getClass().getResource("/view/loginPage.fxml"));
+        Stage stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
+        Scene scene = new Scene(root);
+        stage.setScene(scene);
+        stage.show();
+    }
+
 }
