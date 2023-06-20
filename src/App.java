@@ -19,7 +19,7 @@ public class App extends Application{
     public void start(Stage stage) throws Exception {
         
         try {
-            Parent root = FXMLLoader.load(getClass().getResource("/view/movieHomepage.fxml"));
+            Parent root = FXMLLoader.load(getClass().getResource("/view/loginPage.fxml"));
             Scene scene = new Scene(root);
 
             Image icon = new Image("vectorImages/movieHubLogo.png");

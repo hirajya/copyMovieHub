@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="724.0" prefWidth="1140.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.SignupController">
+   <children>
+      <ImageView blendMode="HARD_LIGHT" fitHeight="726.0" fitWidth="1267.0" layoutX="-72.0" layoutY="-2.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../vectorImages/miles%20bg.png" />
+         </image>
+      </ImageView>
+      <ImageView blendMode="MULTIPLY" cache="true" fitHeight="726.0" fitWidth="397.0" layoutX="703.0" layoutY="-1.0" pickOnBounds="true" preserveRatio="true" style="-fx-opacity: 55;">
+         <image>
+            <Image url="@../vectorImages/Sign%20up%20bg.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="208.0" fitWidth="205.0" layoutX="797.0" layoutY="6.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../vectorImages/newlkogo.png" />
+         </image>
+      </ImageView>
+      <Text fill="WHITE" layoutX="739.0" layoutY="243.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Full Name">
+         <font>
+            <Font name="Franklin Gothic Medium" size="16.0" />
+         </font>
+      </Text>
+      <TextField layoutX="739.0" layoutY="247.0" prefHeight="45.0" prefWidth="261.0" style="-fx-background-color: transparent; -fx-border-width: 0px 0px 2px 0px; -fx-border-color: #000000; -fx-text-fill: white;" />
+      <Text fill="WHITE" layoutX="739.0" layoutY="315.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Email or Phone Number">
+         <font>
+            <Font name="Franklin Gothic Medium" size="16.0" />
+         </font>
+      </Text>
+      <TextField layoutX="739.0" layoutY="319.0" prefHeight="45.0" prefWidth="261.0" style="-fx-background-color: transparent; -fx-border-width: 0px 0px 2px 0px; -fx-border-color: #000000; -fx-text-fill: white;" />
+      <Text fill="WHITE" layoutX="739.0" layoutY="388.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Username">
+         <font>
+            <Font name="Franklin Gothic Medium" size="16.0" />
+         </font>
+      </Text>
+      <TextField layoutX="739.0" layoutY="392.0" prefHeight="45.0" prefWidth="261.0" style="-fx-background-color: transparent; -fx-border-width: 0px 0px 2px 0px; -fx-border-color: #000000; -fx-text-fill: white;" />
+      <Text fill="WHITE" layoutX="738.0" layoutY="459.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Password">
+         <font>
+            <Font name="Franklin Gothic Medium" size="16.0" />
+         </font>
+      </Text>
+      <TextField layoutX="739.0" layoutY="463.0" prefHeight="45.0" prefWidth="261.0" style="-fx-background-color: transparent; -fx-border-width: 0px 0px 2px 0px; -fx-border-color: #000000; -fx-text-fill: white;" />
+      <ImageView fitHeight="51.0" fitWidth="180.0" layoutX="821.0" layoutY="560.0" onMouseClicked="#switchToLogin" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../vectorImages/Login%20button%20icon.png" />
+         </image>
+      </ImageView>
+      <Text fill="WHITE" layoutX="847.0" layoutY="591.0" onMouseClicked="#switchToLogin" strokeType="OUTSIDE" strokeWidth="0.0" text="Create Account">
+         <font>
+            <Font name="Franklin Gothic Medium" size="16.0" />
+         </font>
+      </Text>
+      <Text fill="WHITE" layoutX="37.0" layoutY="650.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Already have an account? ">
+         <font>
+            <Font name="Franklin Gothic Medium" size="16.0" />
+         </font>
+      </Text>
+      <Text fill="WHITE" layoutX="37.0" layoutY="677.0" onMouseClicked="#switchToLogin" strokeType="OUTSIDE" strokeWidth="0.0" text="Sign in">
+         <font>
+            <Font name="Franklin Gothic Medium" size="25.0" />
+         </font>
+      </Text>
+      <ImageView fitHeight="45.0" fitWidth="26.0" layoutX="127.0" layoutY="655.0" onMouseClicked="#switchToLogin" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../vectorImages/Next%20arrow%20white%20png.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="724.0" prefWidth="1140.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.LoginController">
+   <children>
+      <ImageView fitHeight="777.0" fitWidth="1364.0" layoutX="768.0" layoutY="-33.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../vectorImages/fastnfurious%20bg.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="730.0" fitWidth="1297.0" layoutX="324.0" layoutY="-4.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../vectorImages/ironman%20bg.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="730.0" fitWidth="1016.0" layoutY="-3.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../vectorImages/batman%20bg.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="745.0" fitWidth="1297.0" layoutX="-78.0" layoutY="-17.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../vectorImages/filter%20bg.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="228.0" fitWidth="249.0" layoutX="482.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../vectorImages/newlkogo.png" />
+         </image>
+      </ImageView>
+      <Text fill="WHITE" layoutX="490.0" layoutY="231.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Email or Phone number">
+         <font>
+            <Font name="Franklin Gothic Medium" size="16.0" />
+         </font>
+      </Text>
+      <Text fill="WHITE" layoutX="486.0" layoutY="317.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Password">
+         <font>
+            <Font name="Franklin Gothic Medium" size="16.0" />
+         </font>
+      </Text>
+      <ImageView fitHeight="47.0" fitWidth="175.0" layoutX="524.0" layoutY="412.0" onMouseClicked="#switchToHomepage" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../vectorImages/Login%20button%20icon.png" />
+         </image>
+      </ImageView>
+      <Text fill="WHITE" layoutX="575.0" layoutY="440.0" onMouseClicked="#switchToHomepage" strokeType="OUTSIDE" strokeWidth="0.0" text="Log in">
+         <font>
+            <Font name="Franklin Gothic Medium" size="17.0" />
+         </font>
+      </Text>
+      <Text fill="WHITE" layoutX="490.0" layoutY="554.0" onMouseClicked="#switchToSignup" strokeType="OUTSIDE" strokeWidth="0.0" text="Don’t have an account? Sign in">
+         <font>
+            <Font name="Franklin Gothic Medium" size="16.0" />
+         </font>
+      </Text>
+      <TextField fx:id="usernameTextField" layoutX="487.0" layoutY="235.0" prefHeight="48.0" prefWidth="220.0" style="-fx-background-color: transparent; -fx-border-color: #000000; -fx-border-width: 0px 0px 3px 0px; -fx-text-fill: white;" />
+      <PasswordField fx:id="passwordField" layoutX="487.0" layoutY="312.0" prefHeight="56.0" prefWidth="220.0" style="-fx-background-color: transparent; -fx-border-color: #000000; -fx-border-width: 0px 0px 3px 0px; -fx-text-fill: white;" />
+      <Text fx:id="wrongpass" fill="#dd0f0f" layoutX="531.0" layoutY="391.0" strokeType="OUTSIDE" strokeWidth="0.0" text="*Wrong Credentials" visible="false">
+         <font>
+            <Font name="Corbel Bold" size="15.0" />
+         </font>
+      </Text>
+   </children>
+</AnchorPane>
